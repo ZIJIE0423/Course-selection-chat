@@ -1,0 +1,719 @@
+[
+  {
+    "query": "008301100001 是什么课？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "大学英语Ⅲ",
+      "外国语学院",
+      "公共基础课"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "**1. 官方信息：**\n课程代码 **008301100001** 对应的课程是 **《大学英语Ⅲ》**。\n* **课程级别**：公共基础课\n* **开课学院**：外国语学院\n* **开课学期**：2025-2026学年第3学期\n* **授课教师**：刘辉、毛艳阳、郝广伟、魏蕾、秦晓星、辛海燕、黄佩琦、张圆圆、管云秋、时秀华、逄洋洋\n\n**2. 学生评价/经验反馈：**\n当前知识库未检索到关于该课程的学生评价与经验反馈。\n\n**3. 建议：**\n《大学英语Ⅲ》作为公共基础课，是提升英语综合应用能力的重要课程。由于该课程由多位老师平行授课，建议您在选课时：\n* 密切关注教务系统发布的具体上课时间和地点，选择与自己整体课表不冲突的教师班次。\n* 结合自身的英语学习基础和专业的培养方案要求，按时修读，为后续的高阶英语课程或相关英语等级考试打下良好基础。\n\n**4. 依据来源：**\n* 官方结构化数据 (official_structured_db)",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "大学物理Ⅱ2的学分是多少？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "3",
+      "学分"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "### 官方信息\n根据学校官方数据库信息，“大学物理Ⅱ2”（课程代码：080501101037）的学分为 **3.0学分**。\n\n### 建议\n该课程为3学分，属于学分占比较大的理科基础课程，通常具有一定的学习难度。建议在选课时合理规划本学期的整体学分负担，避免与其他高难度或高学分课程冲突，并预留充足的课后复习与做题时间。\n\n### 依据来源\n- 官方结构化数据 (official_structured_db)",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "线性代数是必修还是选修？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "必修",
+      "线性代数"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据，无法确定“线性代数”在您所在专业的培养方案中属于必修课还是选修课。\n\n2. **建议**：由于不同专业、不同年级的培养方案对课程属性的要求可能存在差异，建议您直接登录学校教务管理系统，查看您所属专业的最新培养方案，或咨询所在学院的教务老师，以获取最准确的官方指导。\n\n3. **依据来源**：数据库检索结果（未找到相关课程信息）。",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "谁教数字逻辑这门课？",
+    "expected_route": "mysql_query",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "杨永全",
+      "信息科学与工程学部"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "**官方信息**：当前知识库未检索到足够依据，无法提供“数字逻辑”这门课程的授课教师信息。\n\n**建议**：建议您登录学校官方教务管理系统查询最新的课程排课表，或直接向所在学院的教务办公室/辅导员咨询，以获取最准确的授课教师及上课时间地点信息。\n\n**依据来源**：当前提供的参考上下文中未包含“数字逻辑”课程的相关数据。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "请问微观经济学是哪个学院开的？",
+    "expected_route": "mysql_query",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "经济学院"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. 官方信息：当前知识库未检索到足够依据，无法确认“微观经济学”是由哪个学院开设的。\n\n2. 建议：建议您登录学校官方教务管理系统查询该课程的详细排课与开课单位信息，或直接咨询学校教务处及相关学院的教务老师，以获取最准确的官方解答。\n\n3. 依据来源：当前提供的参考上下文中未包含“微观经济学”的相关课程数据。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "050201100010 这门课的老师是谁？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "姚鹏",
+      "有机化学"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. **官方信息**：\n课程代码为 050201100010 的课程是《有机化学》，授课教师是**姚鹏**老师。该课程由化学化工学院开设，属于专业类课程，安排在 2025-2026 学年第 3 学期。\n\n2. **建议**：\n《有机化学》通常是化学、化工及相关专业的重要基础课，具有一定的难度和挑战性。建议您在选课前仔细查阅该课程的教学大纲，了解考核方式；同时可以结合自身的专业培养方案和学习进度进行规划。如果条件允许，也可以向修读过该课程的学长学姐请教学习经验和备考建议。\n\n3. **依据来源**：\n官方结构化数据 (official_structured_db)",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "微积分在哪个校区上？",
+    "expected_route": "mysql_query",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "王学芳",
+      "肖汉"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. **官方信息**：当前知识库未检索到关于“微积分”（或相关课程“高等数学”）上课校区的足够依据。虽然在官方培养方案中检索到了“高等数学1”这门公共基础必修课（6学分，总学时96，通常安排在第2学期），但提供的资料中并未包含具体的上课校区和教室安排信息。\n\n2. **学生评价/经验反馈**：当前知识库未检索到相关的学生经验反馈。\n\n3. **建议**：公共基础课（如高等数学/微积分）的上课校区和教室通常会根据每学期的具体教学班排课情况有所调整。建议您直接登录学校的**官方教务选课系统**，在查询具体教学班的课表时确认上课校区；或者向您的**辅导员、学院教务老师**咨询，以获取最新、最准确的校区安排信息。\n\n4. **依据来源**：提供的官方培养方案文档（未包含校区信息）。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "选课流程是什么？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "初选",
+      "补选",
+      "退选"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "### 1. 官方信息\n根据学校官方选课指导，选课是指学生需要根据培养方案、开课计划和个人学习安排，在规定时间内通过学校教务系统选择课程的过程。\n\n整体的选课阶段主要包括以下几个环节：\n* **初选**\n* **补选**\n* **退选**\n* **选课结果确认**\n\n*注：在选课过程中，学校会根据实际选课情况与开课单位协商，对部分课程进行适当调整。当前知识库未检索到教务系统内每一步的具体点击操作细节，如需了解详细的系统操作步骤，请查阅教务处发布的《新生学业指导-选课篇-6选课流程》。*\n\n### 2. 建议\n* **提前规划**：在选课开始前，务必仔细研读本专业的培养方案，明确自己的应修课程、课程类别及学分要求，制定合理的个人学习安排。\n* **关注公告**：密切关注学校教务处官网发布的当学期“选课信息公告”，准确把握初选、补选、退选等各个阶段的具体时间节点，避免错过选课机会。\n* **熟悉系统**：建议提前登录教务系统熟悉界面与操作，确保在选课通道开启时能够顺利完成选课及结果确认。\n\n### 3. 依据来源\n* 《中国海洋大学选课指导.md》（官方文档：涵盖选课概念、选课阶段说明及选课流程指导链接）",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "培养方案里公共基础课有哪些？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "思想道德与法治",
+      "大学物理",
+      "高等数学",
+      "体育"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "### 1. 官方信息\n根据当前知识库检索到的《培养方案》，公共基础课包含以下部分课程。**需要明确说明的是，当前知识库未检索到足够依据以提供完整的公共基础课列表**，目前仅检索到以下课程信息：\n\n*   **大学英语高级系列课程A组**：公共基础外语课，2学分\n*   **大学英语高级系列课程B组**：公共基础外语课，2学分\n*   **概率统计**：公共基础必修课，4学分\n*   **形势与政策-2024秋**：公共基础必修课，0.25学分\n*   **大学物理Ⅱ2**：公共基础必修课，3学分\n*   **毛泽东思想和中国特色社会主义理论体系概论**：公共基础必修课，3学分\n\n*(注：检索数据中的开设学期字段存在截断或识别异常，具体开设学期请以教务系统为准。)*\n\n### 2. 学生评价/经验反馈\n当前知识库未检索到关于上述公共基础课的学生评价与经验反馈。\n\n### 3. 建议\n由于当前知识库仅展示了部分公共基础课程，无法为您提供完整的课程清单。建议您直接登录学校官方教务系统，查看您所在专业最新、最完整的《培养方案》及课程设置总表，以便合理规划您的选课与学分修读进度。\n\n### 4. 依据来源\n*   官方文档：《培养方案.md》 (official_programme_plan)",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "补考的课可以重修吗？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "不可",
+      "重修",
+      "申请补考"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "**官方信息**：\n当前知识库未检索到足够依据来回答“补考的课是否可以重修”这一问题。提供的参考材料中主要涉及选课概念、培养方案、选课阶段及课程调整机制，未包含关于补考与重修的具体学籍管理规定。\n\n**建议**：\n关于补考与重修的具体政策（例如：补考未通过是否必须重修、补考通过后是否允许为了“刷分”而重修等），学校通常有严格的学籍管理和成绩管理规定。建议您采取以下措施获取准确信息：\n1. **查阅官方文件**：登录学校教务处官方网站，查找并仔细阅读最新的《本科生学籍管理规定》或《课程考核与成绩管理办法》。\n2. **咨询教务老师**：直接联系您所在学院的教务老师（教务秘书）或辅导员，他们能根据您的具体专业和年级，提供最权威、最准确的解答和操作指导。\n\n**依据来源**：\n当前提供的参考上下文（未包含补考与重修相关政策依据）。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "在哪里看教务通知？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "jwgl.ouc.edu.cn",
+      "教务通知",
+      "登录界面"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "### 1. 官方信息\n根据中国海洋大学教务处的公告，有关选课等教务通知会在新版“**教务综合信息集成服务平台**”登录界面的“**教务通知**”栏进行及时更新。\n\n您可以通过以下两个地址访问该平台并查看通知：\n- **登录地址 1**：http://jwgl.ouc.edu.cn\n- **登录地址 2**：http://jwgl2.ouc.edu.cn\n\n此外，您也可以访问中国海洋大学教务处官网（https://jwc.ouc.edu.cn/）查看“选课动态”等相关栏目获取更多信息。\n\n### 2. 建议\n建议您将教务综合信息集成服务平台的登录地址添加到浏览器书签中，并在选课季或学期初养成定期查看平台登录界面“教务通知”栏的习惯，以确保不会错过重要的选课时间节点、退补选安排及其他教务动态。同时，遇到不确定的流程问题，也可随时查阅教务处官网的“工作流程”或“新生学业指导”板块。\n\n### 3. 依据来源\n- 《中国海洋大学选课指导.md》（官方选课指导文档 / 中国海洋大学教务处官网信息）",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "如何确认我的选课结果？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "选课结果确认",
+      "教务系统",
+      "课表"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "### 1. 官方信息\n根据学校的选课安排，完整的选课过程包含“初选、补选、退选、**选课结果确认**”等阶段。\n有关选课的最新通知及结果确认安排，学校会通过**教务综合信息集成服务平台**进行发布。您可以访问系统登录地址 `jwgl.ouc.edu.cn` 或 `jwgl2.ouc.edu.cn`，在平台登录界面的“**教务通知**”栏查看相关更新。\n*注：当前知识库未检索到系统内进行“选课结果确认”的具体菜单点击步骤，具体操作请以教务系统实际界面和最新教务通知为准。*\n\n### 2. 学生评价/经验反馈\n当前知识库未检索到关于确认选课结果的学生经验反馈。\n\n### 3. 建议\n- **关注官方通知**：在选课期间，请务必密切关注教务系统登录界面的“教务通知”栏，以免错过“选课结果确认”的规定时间。\n- **及时核对课表**：在选课结果确认阶段，建议及时登录教务系统查看个人最终课表，核对课程名称、上课时间、地点及学分等信息，确保选课成功且无冲突。\n- **寻求人工帮助**：如果在确认选课结果时遇到系统问题或对选课状态有疑问，建议第一时间联系所在学院的教务老师或学校教务处寻求帮助。\n\n### 4. 依据来源\n- [3] 《2016年春季学期本科生选课信息公告（二）》（明确选课阶段包含“选课结果确认”）\n- [5] 《选课通知与动态信息》（明确教务系统登录地址及“教务通知”栏更新机制）",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "大四工程设计多少学分？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "14",
+      "工作技能必修课"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "1. **官方信息**：\n根据学校官方数据库信息，“大四工程设计”（课程代码：08054104099）的学分为 **14.0 学分**。\n\n2. **建议**：\n该课程学分较高（14.0学分），通常意味着课程任务较重，可能包含大量的实践、项目或设计环节。建议您在选课时充分评估本学期的整体学业负担，合理规划时间，确保有充足的精力投入到工程设计项目中，以取得良好的学习成果。\n\n3. **依据来源**：\n官方结构化数据 (official_structured_db)",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "我忘了教务系统网址，请告诉我。",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "jwgl.ouc.edu.cn",
+      "jwgl2.ouc.edu.cn"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "### 官方信息\n中国海洋大学教务综合信息集成服务平台（教务系统）的登录地址如下：\n- **登录地址 1**：http://jwgl.ouc.edu.cn\n- **登录地址 2**：http://jwgl2.ouc.edu.cn\n\n此外，中国海洋大学教务处官方网站地址为：https://jwc.ouc.edu.cn/\n\n### 建议\n1. 建议您将上述教务系统网址添加到浏览器的书签或收藏夹中，以便日后快速访问。\n2. 选课期间，有关选课的最新通知和动态信息会在教务系统登录界面的“教务通知”栏及时更新，请您在选课前务必登录系统并密切关注相关公告。\n\n### 依据来源\n- 《中国海洋大学选课指导.md》（官方选课指导/官方教务信息）",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "张圆圆的大学英语怎么样？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "student_review_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "student_review_rag",
+    "gold_answer_keywords": [
+      "发音",
+      "口语好",
+      "互动",
+      "非官方参考"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "根据提供的知识库信息，关于张圆圆老师的“大学英语”课程情况如下：\n\n**1. 官方信息**\n当前知识库未检索到关于张圆圆老师“大学英语”课程的官方结构化数据或官方文档信息（如具体学分、课程性质、开课学期等）。\n\n**2. 学生评价/经验反馈**\n*[注：以下为非官方的学生经验反馈，仅供参考]*\n综合多位同学的反馈，张圆圆老师的“大学英语”（含大英三）课程整体评价非常高，具体体现在以下几个方面：\n* **教师素养与授课风格**：老师发音标准、口语超级好，讲课水平高且内容有趣。老师极具亲和力，被学生评价为“优雅知性、很fashion”，课堂氛围很好（“上课很有feel”）。\n* **课堂互动**：上课会带领学生深入分析课文，鼓励大家用英语回答问题，这部分互动表现会被记录在平时分中。\n* **作业与考核**：课下作业较少或处于正常水平，但会有预习报告的要求。\n\n**3. 建议**\n* **适合人群**：如果你看重老师的口语发音，喜欢生动有趣、有亲和力的授课风格，或者希望在一个氛围良好的课堂中锻炼自己的英语表达和课文分析能力，张圆圆老师的课是非常优质的选择。\n* **学习提示**：由于课堂上的英语问答互动与平时分直接挂钩，且需要提交预习报告，建议选课后保持积极的课堂参与度，不要害怕开口，并养成课前预习的好习惯。\n\n**4. 依据来源**\n* 《选课评价参考.md》（学生评价检索结果）",
+    "used_tools": [
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "大学英语IV 哪个老师评价比较好？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "student_review_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "student_review_rag",
+    "gold_answer_keywords": [
+      "杨艳微",
+      "非官方参考",
+      "作业不多",
+      "给分不高"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "1. 官方信息：\n当前知识库未检索到关于“大学英语IV”的官方课程数据或选课政策依据。\n\n2. 学生评价/经验反馈：\n根据学生经验反馈（非官方参考），当前知识库中仅检索到**杨艳微**老师教授“大英4（大学英语IV）”的评价：\n- **正面反馈**：老师人挺好；平时作业不多，阅读教程只需要完成很少一部分即可，课业负担相对较轻。\n- **需要注意的方面**：老师给分不高且标准比较严格。评价中特别提醒，处于挂科边缘的同学不建议选择该老师的课程。\n\n3. 建议：\n由于当前知识库中仅检索到杨艳微老师一位教授“大学英语IV”的学生评价，无法为您提供多位老师的横向对比。\n- 如果您平时课业较忙，希望英语课的作业量较少，且自身英语基础扎实、不担心挂科风险，可以考虑选择杨艳微老师。\n- 如果您比较在意最终的绩点给分，或者英语基础较为薄弱（在挂科边缘），建议您通过咨询直系学长学姐、查阅学校教务系统或校内论坛等其他渠道，进一步了解教授该课程的其他老师的授课与给分情况后再做决定。\n\n4. 依据来源：\n- 学生评价参考.md (student_review_rag)",
+    "used_tools": [
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "近现代经典绘画鉴赏作业多不多？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "student_review_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "student_review_rag",
+    "gold_answer_keywords": [
+      "张锦莉",
+      "作业偏多",
+      "读书日志",
+      "小组讨论"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "根据您提供的信息，关于《近现代经典绘画鉴赏》课程的作业量情况，回答如下：\n\n**1. 官方信息**\n当前知识库未检索到关于《近现代经典绘画鉴赏》课程作业量及考核方式的官方结构化数据或官方文档说明。\n\n**2. 学生评价/经验反馈**\n根据学生的经验反馈，该课程（授课教师：张锦莉）作为一门通识课，**布置的作业相对较多**。具体体现在：\n* 每周需要进行课前预习；\n* 需要撰写读书日志和学习日志；\n* 需要参与小组讨论。\n此外，有同学反馈老师对任务要求的解说有时不够明确，导致大家不能准确了解具体要求，并希望能适当减轻作业负担。\n*（注：以上内容均来自学生的个人经验反馈，仅供参考，非官方结论。）*\n\n**3. 建议**\n* **谨慎评估时间**：如果您本学期的专业课业压力较大，或者不太喜欢频繁撰写日志和参与小组讨论，建议在选课前慎重考虑，以免增加过多的课外负担。\n* **主动沟通确认**：如果您对近现代经典绘画有浓厚兴趣，且愿意投入课余时间，可以选择该课程。建议在开课初期主动与老师或助教沟通，明确各项作业和小组任务的具体要求，以确保顺利完成课程考核。\n\n**4. 依据来源**\n* 选课评价参考.md（学生评价/经验反馈）",
+    "used_tools": [
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "有没有事少的选修课推荐？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "mysql",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "干焱平",
+      "军事概论",
+      "事儿少",
+      "非官方"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据，无法为您提供具体的选修课名单以及官方的课业负担说明。\n\n2. **学生评价/经验反馈**：当前知识库未检索到足够依据，暂无学生关于课程负担（即“事少”）的相关经验反馈供您参考。\n\n3. **建议**：虽然无法直接为您推荐具体的课程，但建议您在选课时可以参考以下策略来寻找适合自己的课程：\n   - **查阅课程大纲与考核方式**：在教务系统中仔细阅读拟选课程的教学大纲。通常来说，以期末论文、开卷考试或大作业为主的课程，日常的硬性作业和打卡任务相对较少；而包含大量小组展示（Pre）、随堂测验或实验报告的课程则日常事务较多。\n   - **咨询往届经验**：向同专业的学长学姐、同学或辅导员咨询往届课程的实际情况、授课教师的风格以及考核难度，获取最真实的“避坑”或“推荐”指南。\n   - **结合兴趣与学业规划**：建议您优先选择自己真正感兴趣或与未来发展相关的课程。兴趣是最好的老师，能让学习过程更加轻松。同时，请务必对照本专业的培养方案，合理规划每学期的学分和学业负担，确保顺利毕业。\n\n4. **依据来源**：当前知识库未检索到相关信息。",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "高数林敏老师给分好吗？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "student_review_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "student_review_rag",
+    "gold_answer_keywords": [
+      "有意思",
+      "透彻",
+      "开玩笑"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "1. **官方信息**：当前知识库未检索到关于高数林敏老师的官方结构化数据或官方文档信息（如具体学分、排课学期等官方依据）。\n\n2. **学生评价/经验反馈**：根据往届学生的非官方评价反馈，林敏老师讲课挺有意思且十分透彻，能够让大多数同学听懂，课下还会偶尔开开玩笑，课堂氛围较好。关于给分情况，有学生评价表示“听说给分也不错哟”。（注：此部分均为学生个人的经验反馈与主观感受，并非官方结论，仅供参考。）\n\n3. **建议**：如果您倾向于选择讲课生动透彻、课堂氛围轻松且易于理解的老师，林敏老师是一个值得考虑的选择。不过，关于“给分不错”的评价多基于学生的个人听闻或主观体验，大学数学课程的最终成绩仍取决于您的出勤、作业完成度以及期末考试表现。建议您结合自身数学基础、学习习惯以及本学期的整体课业压力进行综合考量，选课后保持认真的学习态度。\n\n4. **依据来源**：\n- [4] 选课评价参考.md | 类型: student_review (非官方)",
+    "used_tools": [
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "道德经这门课水吗？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "丁玉柱",
+      "事情超多",
+      "抄写",
+      "论文"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "1. 官方信息：当前知识库未检索到关于“道德经”这门课程的官方信息（如课程编号、学分、学时、开课学期等）。\n2. 学生评价/经验反馈：当前知识库未检索到关于该课程的学生评价或经验反馈。\n3. 建议：当前知识库未检索到足够依据，无法直接判断该课程是否“水”。建议您通过学校教务系统查询该课程的教学大纲、授课教师及考核方式，或向修读过该课程的学长学姐咨询，以获取更真实、准确的选课参考。\n4. 依据来源：提供的参考上下文中未包含“道德经”课程的相关信息。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "郝广伟老师的课推荐上吗？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "事情少",
+      "最水",
+      "轻松"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据，无法提供郝广伟老师及其所授课程的官方信息（如课程名称、学分、课程性质、开课学期等）。\n\n2. **学生评价/经验反馈**：当前知识库未检索到足够依据，暂无关于郝广伟老师课程的学生评价或经验反馈。\n\n3. **建议**：由于当前知识库未检索到足够依据，建议您直接登录学校教务系统查询郝广伟老师的具体开课计划与课程大纲。此外，您可以通过校园论坛、专业交流群或向修读过该课程的直系学长学姐咨询，以获取更真实的课堂体验、考核方式及选课参考。\n\n4. **依据来源**：当前提供的参考上下文（官方文档检索结果）中未包含相关信息。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "大学英语Ⅲ的学分是多少？这门课水不水？",
+    "expected_route": "hybrid_sql_rag",
+    "predicted_route": "hybrid_sql_rag",
+    "expected_source_type": "hybrid",
+    "predicted_source_type": "hybrid",
+    "gold_answer_keywords": [
+      "外国语学院",
+      "刘辉",
+      "最水",
+      "轻松",
+      "非官方"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "hybrid",
+    "answer": "### 1. 官方信息\n* **课程名称**：大学英语Ⅲ\n* **开课部门**：外国语学院\n* **授课教师**：刘辉、毛艳阳、郝广伟、魏蕾、秦晓星、辛海燕、黄佩琦、张圆圆、管云秋、时秀华、逄洋洋\n* **课程学分**：**当前知识库未检索到足够依据**（官方数据库中该课程学分字段为空）。建议您登录学校教务系统或查阅本专业的最新培养方案以获取准确的学分信息。\n\n### 2. 学生评价/经验反馈（非官方参考）\n关于这门课“水不水”（即课程要求高低、学习压力大小），根据往届学生的经验反馈，**主要取决于你选择的授课教师**，不同老师的风格差异较大：\n* **要求较低/相对轻松的老师**：\n  * **郝广伟**：被部分学生评价为“最水的英语老师”，上课事情少，期末口语压力不大，管理较松。适合希望课程压力小的同学，但爱学习的同学可能会觉得管得太松。\n  * **管云秋**：老师温和，课堂流程通常为小组展示、听读课文、做summary等，整体要求不是太高。\n  * **柏杰**：平时要求较低，虽然会布置阅读教程和summary，但检查时比较宽松。\n* **要求较高/注重互动的老师**：\n  * **张圆圆**：口语超级好，上课会领着分析课文。课下作业少（有预习报告），但要求用英语回答问题并计入平时分，整体评价很好。\n  * **秦玉清**：老师挺不错，但平时要求挺多，不属于“水课”。\n  * **辛海燕**：大部分时间让学生做口语练习（Oral English practice），但有学生反馈提问单词的方式有些让人摸不透。\n* **其他好评老师**：\n  * **魏蕾**：学生直接评价“老师超好”。\n\n### 3. 建议\n* **按需选择老师**：如果你本学期课业繁重，希望英语课压力小一些、期末口语考核轻松，可以优先考虑**郝广伟、管云秋**或**柏杰**老师的班级；如果你希望切实提升英语口语和阅读分析能力，且不怕平时课堂互动，推荐选择**张圆圆、魏蕾**等老师。\n* **核实学分与排课**：由于当前知识库未提供学分信息，请务必在选课前通过教务系统确认该课程的具体学分以及各位老师的实际排课时间，避免与你的专业课冲突。\n\n### 4. 依据来源\n* **官方结构化数据 (official_structured_db)**：MySQL数据库检索结果（提供课程名称、部门、教师等基础信息）。\n* **学生评价 (student_review_rag)**：《选课评价参考.md》（提供往届学生的非官方上课体验与评价反馈）。",
+    "used_tools": [
+      "mysql_query",
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "008401100001 这门课哪个老师给分高？",
+    "expected_route": "hybrid_sql_rag",
+    "predicted_route": "hybrid_sql_rag",
+    "expected_source_type": "hybrid",
+    "predicted_source_type": "hybrid",
+    "gold_answer_keywords": [
+      "高等数学Ⅰ",
+      "数学科学学院",
+      "非官方"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "hybrid",
+    "answer": "### 1. 官方信息\n课程代码 **008401100001** 对应的课程为 **“高等数学Ⅰ”**，属于公共基础课，由数学科学学院开设，安排在 2025-2026 学年第 3 学期授课。\n该课程的授课教师团队包括：丁双双、孙敏慧、高振、姚增善、黄桂芳、刘文静、林敏、孙建青、田浩、常晋德、任启峰、农庆琴、刘彬。\n\n### 2. 学生评价/经验反馈\n根据往届学生的经验反馈（注：以下为学生主观评价，非官方结论，仅供参考），关于该课程部分老师的给分与授课情况如下：\n* **刘彬**：学生评价“很好，**给分高**”。\n* **农庆琴**：学生反馈“**给分低**”，并提及讲课效果不佳、爱迟到等，建议谨慎选择。\n* **丁双双**：学生评价“课堂笔记很整齐”。\n* **姚增善**：学生评价“讲课很风趣，上课前十分钟基本都在聊天，有口音，板书工整”。\n* **田浩**：学生评价“老师人很好，不过板书和字都不行，听课的时候觉得讲课有点乱”。\n\n### 3. 建议\n* **追求绩点**：如果您在选课时有较高的绩点需求，根据学生反馈，建议优先选择 **刘彬** 老师的班级；同时建议避开反馈中明确提到“给分低”的 **农庆琴** 老师。\n* **注重听课体验**：高等数学是重要的理科基础课，难度较大。除了关注给分，建议您也结合自身的听课习惯选择老师（例如喜欢板书工整的可以考虑丁双双或姚增善）。\n* **学习建议**：无论选择哪位老师，高数都需要课后投入大量时间刷题和复习，建议选课后端正态度，踏实学习，这才是取得高分的根本保障。\n\n### 4. 依据来源\n* **官方结构化数据 (official_structured_db)**：课程代码 008401100001 的基础教务信息。\n* **学生评价 (student_review_rag)**：《选课评价参考.md》中的历届学生选课反馈。",
+    "used_tools": [
+      "mysql_query",
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "线性代数有多少学分，大家评价如何？",
+    "expected_route": "hybrid_sql_rag",
+    "predicted_route": "hybrid_sql_rag",
+    "expected_source_type": "hybrid",
+    "predicted_source_type": "hybrid",
+    "gold_answer_keywords": [
+      "必修",
+      "评价",
+      "非官方"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "hybrid",
+    "answer": "1. 官方信息：\n当前知识库未检索到关于“线性代数”课程学分的足够依据。建议您登录学校教务系统或查阅本专业的最新官方培养方案，以获取最准确的学分和选课要求信息。\n\n2. 学生评价/经验反馈：（注：以下为非官方的学生经验反馈，仅供参考）\n根据往届学生的评价，线性代数不同授课教师的风格有所不同：\n*   **曲小英（曲晓英）老师**：学生反馈老师人超级好，讲解细致耐心，并且会随时在群里为大家答疑。\n*   **李晓敏老师**：学生普遍认为老师认真负责、人超好，且板书超级工整（有学生建议把板书整理好、认真写作业就没问题）。不过也有部分学生反馈老师要求比较严格、风格像高中老师、亲和力稍弱，且语速较快、作业量不少。\n\n3. 建议：\n*   **教师选择**：如果您偏好讲解细致耐心、课后答疑积极的老师，可以优先考虑曲小英老师的班级；如果您不介意作业较多和严格的管理，且喜欢板书工整的授课方式，李晓敏老师的课程也很扎实，但上课时需要注意跟上语速并认真对待课后作业。\n*   **学分确认**：由于学分信息关乎您的毕业和学业规划，请务必以教务处官方系统或学院下发的培养方案为准，切勿仅凭经验选课。\n\n4. 依据来源：\n*   《选课评价参考.md》（学生评价/非官方）",
+    "used_tools": [
+      "mysql_query",
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "高等数学Ⅱ的开课学院是哪个，这课难不难？",
+    "expected_route": "hybrid_sql_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "hybrid",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "数学科学学院",
+      "难",
+      "评价"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "hybrid",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据，未能找到关于“高等数学Ⅱ”的开课学院及相关教务信息。\n\n2. **学生评价/经验反馈**：当前知识库未检索到足够依据，未能找到关于该课程难度的学生评价或经验反馈。\n\n3. **建议**：建议您直接登录学校官方教务管理系统，查询“高等数学Ⅱ”的开课学院、授课教师及课程大纲等权威信息。关于课程难度，建议您在校园论坛、专业交流群中向修读过该课程的学长学姐请教，获取真实的经验参考，并结合自身的数学基础提前做好学习规划。\n\n4. **依据来源**：当前提供的知识库上下文（未检索到相关信息）。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "环境地质概论是通识课吗，选的人多不多？",
+    "expected_route": "hybrid_sql_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "hybrid",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "通识教育课程",
+      "海洋地球科学学院",
+      "吴晓"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "hybrid",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据。在提供的培养方案和选课指导文档中，未包含关于“环境地质概论”的课程性质（是否为通识课）以及选课人数等相关信息。\n2. **学生评价/经验反馈**：当前知识库未检索到足够依据。\n3. **建议**：建议您直接登录学校教务系统，在选课模块中查询“环境地质概论”的课程类别、学分及历年选课热度；或者向所在学院的教务老师、辅导员进行咨询，以获取最准确的官方解答和选课指导。\n4. **依据来源**：当前提供的上下文资料（未检索到相关信息）。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "008201100001 体育初级篮球的上课地点在哪，老师人怎么样？",
+    "expected_route": "hybrid_sql_rag",
+    "predicted_route": "hybrid_sql_rag",
+    "expected_source_type": "hybrid",
+    "predicted_source_type": "hybrid",
+    "gold_answer_keywords": [
+      "丁宏",
+      "体育系",
+      "评价"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "hybrid",
+    "answer": "### 官方信息\n根据官方数据库信息，课程“体育(初级篮球)”（课程代码：008201100001）由体育系**丁宏**老师授课，课程性质为公共基础课，开课学期为2025-2026-3。\n**关于上课地点**：当前知识库未检索到足够依据。体育课程通常在特定的室外篮球场或室内体育馆进行，具体上课地点请务必以教务选课系统最终公布的排课信息为准。\n\n### 学生评价/经验反馈\n根据往届学生的经验反馈（非官方参考），同学们对丁宏老师的评价非常高：\n- **性格与态度**：老师人特别好，性格温柔，而且在上课时会比较照顾女生。\n- **授课风格**：老师上课幽默，课堂氛围轻松愉快。\n\n### 建议\n1. **确认场地**：由于体育类课程场地较为特殊，建议选课成功后，第一时间登录教务系统确认具体的上课场地（如第几篮球场或哪个体育馆），以免上课时走错场地。\n2. **选课参考**：从学生反馈来看，丁宏老师风评极佳，教学氛围轻松且充满人文关怀（特别是照顾女生）。如果你希望在轻松、幽默且没有太大压力的环境中学习篮球基础，这门课是非常不错的选择。\n\n### 依据来源\n1. 官方结构化数据 (official_structured_db)\n2. 学生评价 (student_review_rag) - 《选课评价参考.md》",
+    "used_tools": [
+      "mysql_query",
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "NOTEXIST999 有这门课吗？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "未找到",
+      "没有找到"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. 官方信息：当前知识库未检索到足够依据。在官方数据库中未找到“NOTEXIST999”这门课程的相关信息，该课程可能不存在、课程代码有误或尚未录入系统。\n\n2. 建议：建议您仔细核对课程代码或课程名称是否拼写准确。如果确认无误，建议直接咨询学校教务处或所在学院的教务老师，以获取最新、最准确的课程目录和开课情况。\n\n3. 依据来源：MySQL检索结果。",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "清华大学的选课流程是什么？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "未找到",
+      "未检索到",
+      "不足"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "当前知识库未检索到足够依据。\n\n提供的参考资料仅包含中国海洋大学的选课指导信息，未涉及清华大学的选课政策与流程。建议您直接访问清华大学教务处官方网站或查阅该校最新的选课通知与学生手册，以获取准确、权威的选课流程信息。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "有没有周杰伦老师的课？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "未找到",
+      "未检索到"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "**官方信息**：当前知识库未检索到足够依据。在提供的官方培养方案及课程数据中，未包含授课教师的具体名单与排课信息，因此无法确认是否有周杰伦老师开设的课程。\n\n**学生评价/经验反馈**：当前知识库未检索到相关学生评价。\n\n**建议**：建议您直接登录学校的官方教务选课系统，通过“教师查询”或“课程检索”功能搜索“周杰伦”老师的名字，或者咨询所在学院的教务老师，以获取最新、最准确的开课与选课信息。\n\n**依据来源**：提供的《培养方案.md》官方文档（仅包含课程名称、学分、学时等基础信息，未包含授课教师数据）。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "宇宙飞船制造基础的学分是多少？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "未找到",
+      "没有找到"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. 官方信息：当前知识库未检索到足够依据。在当前的官方数据库和文档中，均未找到关于“宇宙飞船制造基础”这门课程的相关记录，因此无法为您提供该课程的学分信息。\n\n2. 建议：建议您直接登录学校教务处的官方选课系统查询该课程的具体学分和开课情况，或者查阅您所在专业的最新培养方案。如有疑问，也可以直接咨询所在学院的教务老师以获取最准确的指导。\n\n3. 依据来源：当前提供的知识库及数据库检索结果。",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "999999999999 这门课水不水？",
+    "expected_route": "hybrid_sql_rag",
+    "predicted_route": "hybrid_sql_rag",
+    "expected_source_type": "hybrid",
+    "predicted_source_type": "hybrid",
+    "gold_answer_keywords": [
+      "未找到",
+      "未检索到"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "hybrid",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据。在官方数据库中未找到课程代码或名称为“999999999999”的相关课程信息。\n\n2. **学生评价/经验反馈**：当前知识库未检索到足够依据。在学生评价记录中未找到关于该课程的经验反馈或评价内容。\n\n3. **建议**：由于缺乏该课程的具体信息，无法为您评估其课程难度、考核方式及给分情况（即是否“水”）。建议您首先核对课程代码或课程名称是否输入正确。确认无误后，建议您通过学校教务系统查看该课程的官方教学大纲，或向修读过该课程的学长学姐、专业导师进行咨询，以便做出更合理的选课决策。\n\n4. **依据来源**：官方结构化数据库（MySQL检索结果）、学生评价知识库（RAG检索结果）。",
+    "used_tools": [
+      "mysql_query",
+      "retrieve_student_reviews"
+    ]
+  },
+  {
+    "query": "请问学校食堂哪家最好吃？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "未找到",
+      "未检索到",
+      "选课"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "**官方信息**：当前知识库未检索到足够依据。提供的上下文仅包含中国海洋大学选课指导、教务处官网、教务综合信息集成服务平台（如 `jwgl.ouc.edu.cn`）及选课流程等官方学业信息，未包含关于学校食堂的相关数据。\n\n**学生评价/经验反馈**：当前知识库未检索到关于食堂评价的学生经验反馈。\n\n**建议**：作为智能选课问答助手，我专注于为您解答选课政策、培养方案、教务系统使用等学业与选课相关问题。关于“学校食堂哪家最好吃”等校园生活类问题，建议您通过学校的校园论坛、贴吧、表白墙或直接向学长学姐咨询，以获取最真实的美食推荐。如果您有任何关于选课的疑问，欢迎随时向我提问！\n\n**依据来源**：无相关依据（当前知识库未涉及该主题）。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "我能选1000学分的课吗？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "未找到",
+      "建议",
+      "查阅",
+      "教务"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "**官方信息**：\n当前知识库未检索到足够依据。目前提供的数据库和官方文档中未包含关于学校选课学分上限的具体规定。\n\n**建议**：\n在常规的高等教育体系中，单学期的选课学分上限通常在20至35学分之间，而整个本科阶段的总毕业学分一般在140至200学分左右。因此，选修1000学分的课程远超正常的教学安排与个人的学习负荷，通常是不被允许且不现实的。\n为了您的学业健康发展，建议您：\n1. **查阅官方规定**：登录学校教务处官网，查阅最新的《学生手册》或《本科生/研究生选课管理办法》，确认每学期允许选修的最高和最低学分限制。\n2. **科学规划学业**：结合自身的专业培养方案、学习精力和时间安排，合理分配每学期的课程，注重学习质量而非单纯追求学分数量。\n3. **咨询专业老师**：如对学分要求或毕业条件有任何疑问，建议直接咨询所在学院的教务老师或您的学业导师。\n\n**依据来源**：\n当前知识库（未检索到相关官方数据与文档）。",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "大学英语III是体育学院开的吗？",
+    "expected_route": "mysql_query",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "外国语学院"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. 官方信息：当前知识库未检索到足够依据，无法确认“大学英语III”的开课学院是否为体育学院。\n\n2. 建议：建议您登录学校官方教务管理系统查询该课程的详细排课信息与开课单位，或直接咨询学校教务处及相关学院的教务老师，以获取最准确的官方解答。\n\n3. 依据来源：当前提供的参考上下文。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "008301100001 的老师是吴京吗？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "不是",
+      "刘辉",
+      "外国语学院"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. **官方信息**：课程代码“008301100001”对应的课程为“大学英语Ⅲ”，其授课教师**不是**吴京。根据学校官方数据库，该课程的实际授课教师团队包括：刘辉、毛艳阳、郝广伟、魏蕾、秦晓星、辛海燕、黄佩琦、张圆圆、管云秋、时秀华和逄洋洋。\n\n2. **建议**：建议您在选课时，仔细核对教务系统中的教师名单与上课时间，选择最适合自己日程安排的老师。如需了解各位老师的教学风格或考核方式，可以向修读过该课程的学长学姐咨询经验。\n\n3. **依据来源**：官方结构化数据 (official_structured_db)",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "必修课我可以不选直接毕业吗？",
+    "expected_route": "official_doc_rag",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_document_rag",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "未检索到",
+      "不能",
+      "规定"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "official_document_rag",
+    "answer": "1. 官方信息：当前知识库未检索到足够依据。由于缺乏您所在学校具体的培养方案和学籍管理规定文档，无法提供针对您学校的官方确切条款。\n\n2. 学生评价/经验反馈：当前知识库未检索到相关反馈。\n\n3. 建议：按照高校的普遍规定，**必修课是毕业和授予学位的强制性要求，通常绝对不可以不选直接毕业**。如果缺少必修课学分，将直接导致无法满足毕业条件。为了您的学业顺利，建议您尽快采取以下行动：\n   - 仔细查阅本专业的《人才培养方案》或《学生手册》，核对毕业所需的各类必修学分要求。\n   - 立即联系您的学院教务老师、学业导师或辅导员，确认是否有特殊的学分替代、免修政策，或者了解如何进行补修/重修。\n\n4. 依据来源：当前知识库未提供相关上下文信息（数据库中未找到相关课程与政策信息）。",
+    "used_tools": [
+      "mysql_query"
+    ]
+  },
+  {
+    "query": "是不是所有老师都给满分？",
+    "expected_route": "student_review_rag",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "student_review_rag",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "未检索到",
+      "不同老师",
+      "评价"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "student_review_rag",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据。提供的官方文档和培养方案中未包含关于教师评分标准、给分分布或是否给满分的相关规定与信息。\n\n2. **学生评价/经验反馈**：当前知识库未检索到足够依据。暂无学生关于任课教师给分情况的经验反馈数据。\n\n3. **建议**：在大学中，通常不会“所有老师都给满分”。课程成绩一般是由平时表现（如出勤、课堂互动）、课后作业、小组展示（Pre）、期中考试以及期末考试等多个维度综合评定得出的，且不同课程、不同老师的考核标准和给分严格程度会有所差异。建议您在选课后第一时间查阅该课程的“课程大纲（Syllabus）”，明确具体的考核方式和成绩占比；在日常学习中保持端正的学习态度，按时高质量完成各项任务，积极备考，从而取得理想的真实成绩。\n\n4. **依据来源**：当前提供的上下文（未检索到相关直接依据）。",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "高等数学Ⅰ是不是文科生上的课？",
+    "expected_route": "mysql_query",
+    "predicted_route": "official_doc_rag",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_document_rag",
+    "gold_answer_keywords": [
+      "数学科学学院",
+      "公共基础课"
+    ],
+    "should_abstain": false,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. **官方信息**：\n根据官方培养方案数据，【高等数学1】（课程编号：080501101011）属于“公共基础必修课”，学分为6学分，讲课学时为96学时，开设学期为第2学期。\n但是，**当前知识库未检索到足够依据**来明确说明该课程是否专门针对文科生开设（在高校中，高等数学通常会根据理工科、经管类、文科等不同专业需求分为Ⅰ、Ⅱ、Ⅲ或文科数学等不同难度层级）。\n\n2. **学生评价/经验反馈**：\n当前知识库未检索到关于该课程的学生评价与经验反馈。\n\n3. **建议**：\n由于不同专业（文、理、工、经管等）对数学课程的类别和难度要求有严格区分，选错数学课可能导致学分无法计入毕业要求。建议您：\n- 仔细查阅您所在专业专属的《本科人才培养方案》中规定的具体数学课程名称及代码。\n- 直接咨询您所在学院的教务老师、班主任或辅导员，确认“高等数学Ⅰ”是否符合您本专业的修读要求。\n\n4. **依据来源**：\n- [1] 培养方案.md (官方)",
+    "used_tools": [
+      "retrieve_official_docs"
+    ]
+  },
+  {
+    "query": "有没有一门课叫《睡觉》，学分是99？",
+    "expected_route": "mysql_query",
+    "predicted_route": "mysql",
+    "expected_source_type": "official_structured_db",
+    "predicted_source_type": "official_structured_db",
+    "gold_answer_keywords": [
+      "未找到",
+      "没有"
+    ],
+    "should_abstain": true,
+    "gold_evidence_type": "official_structured_db",
+    "answer": "1. **官方信息**：当前知识库未检索到足够依据。在官方课程数据库中，未找到名为《睡觉》且学分为99的课程信息。通常情况下，高校的课程体系中不会设置此类名称以及如此高学分的课程。\n\n2. **建议**：建议您以学校教务处发布的最新培养方案和官方教务系统中的课程目录为准进行选课。此外，虽然学校没有这门课程，但建议您在日常学习生活中合理安排时间，保持规律作息，保证充足的睡眠，以健康的身体和饱满的精力迎接学业挑战。\n\n3. **依据来源**：官方结构化数据库 (official_structured_db) 检索结果。",
+    "used_tools": [
+      "mysql_query"
+    ]
+  }
+]
