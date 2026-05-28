@@ -1,10 +1,88 @@
-.env
+# Python
 __pycache__/
 *.pyc
-.venv/
-chroma_data/
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
 
-# Added by user
-node_modules/
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE and Editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build and Distribution
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+
+# Environment variables
 .env
-secrets.py
+.env.*
+*.env
+*.env.local
+
+# Data and Databases
+chroma_data/
+*.sqlite
+*.db
+
+# Logs
+*.log
+logs/
+
+# Test outputs
+.test_data/
+pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Dependency management
+uv.lock
+uv.lock.backup
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Project specific
+app/crawler/__pycache__/
+app/tasks/__pycache__/
+app/rag/__pycache__/
+
+# Do not ignore project code
+!app/
+!app/**/*.py
+
+# Ensure critical project files are tracked
+!README.md
+!pyproject.toml
+!requirements.txt
+
+# Configuration files (but ignore .env)
+!app/core/config.py
+!app/database/mysql.py
+
+# Data files directory
+!数据文件/
+!数据文件/**/*.md
+
+# Do not ignore tests
+!app/eval/
+!app/eval/**/*.py
+!app/scripts/
+!app/scripts/**/*.py
