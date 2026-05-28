@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 .venv/
 chroma_data/
+
+# Added by user
+node_modules/
+.env
+secrets.py
