@@ -1,4 +1,7 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
 from app.api import chat, admin
 from app.database.mysql import engine, Base
 import app.models.course
@@ -21,6 +24,13 @@ app = FastAPI(
 app.include_router(chat.router, prefix="/api/v1", tags=["Chat"])
 app.include_router(admin.router, prefix="/api/v1/admin", tags=["Admin"])
 
+# 高保真前端原型与 API 同源部署，避免本地联调时的跨域问题。
+frontend_dir = Path(__file__).resolve().parent.parent / "frontend"
+if frontend_dir.exists():
+    app.mount("/prototype", StaticFiles(directory=frontend_dir, html=True), name="prototype")
+
 @app.get("/")
 def root():
+    if frontend_dir.exists():
+        return RedirectResponse(url="/prototype/")
     return {"message": "选课系统智能问答 API 正在运行"}

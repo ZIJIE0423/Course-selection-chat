@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded',()=>{
+ const form=document.querySelector('#feedbackForm'),preview=document.querySelector('#previewPanel'),success=document.querySelector('#successPanel');
+ const qs=new URLSearchParams(location.search),course=WeOUCData.courses.find(c=>c.id===qs.get('course'))||WeOUCData.courses[0];
+ form.course.value=course.name;form.code.value=course.code;form.teacher.value=course.teacher;
+ const draft=localStorage.getItem('weoucFeedbackDraft');if(draft){try{const d=JSON.parse(draft);Object.entries(d).forEach(([k,v])=>{if(form.elements[k])form.elements[k].value=v})}catch(e){}}
+ form.addEventListener('input',()=>{const data=Object.fromEntries(new FormData(form));localStorage.setItem('weoucFeedbackDraft',JSON.stringify(data));document.querySelector('#draftNote').classList.add('show')});
+ document.querySelector('#previewBtn').onclick=()=>{if(!form.workload.value&&!form.difficulty.value&&!form.exam.value)return toast('请至少填写一个体验维度');const d=Object.fromEntries(new FormData(form));document.querySelector('#previewContent').innerHTML=`<p><strong>课程：</strong>${d.course}（${d.code}）</p><p><strong>教师：</strong>${d.teacher||'未填写'}</p><p><strong>修读学期：</strong>${d.term} · ${d.campus}</p><p><strong>体验：</strong>${[d.workload,d.difficulty,d.exam,d.pace].filter(Boolean).join(' / ')}</p>${d.note?`<p><strong>补充：</strong>${d.note}</p>`:''}`;form.classList.add('hidden');preview.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})};
+ document.querySelector('#backEdit').onclick=()=>{preview.classList.add('hidden');form.classList.remove('hidden')};
+ document.querySelector('#submitFeedback').onclick=()=>{if(!document.querySelector('#truth').checked)return toast('请先确认真实性声明');preview.classList.add('hidden');success.classList.remove('hidden');localStorage.removeItem('weoucFeedbackDraft');const items=JSON.parse(localStorage.getItem('weoucSubmissions')||'[]');items.unshift({id:'WOC-'+Date.now().toString().slice(-8),course:course.name,status:'审核中',date:new Date().toLocaleDateString('zh-CN')});localStorage.setItem('weoucSubmissions',JSON.stringify(items))};
+});

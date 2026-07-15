@@ -3,9 +3,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.pyc
-*.pyo
-*.pyd
 *.so
 *.dylib
 *.dll
@@ -14,6 +11,7 @@ __pycache__/
 .venv/
 venv/
 env/
+.uv-cache/
 
 # IDE and Editor
 .idea/
@@ -33,6 +31,7 @@ build/
 .env.*
 *.env
 *.env.local
+!.env.example
 
 # Data and Databases
 chroma_data/
@@ -46,6 +45,11 @@ logs/
 # Test outputs
 .test_data/
 pytest_cache/
+.pytest_cache/
+
+# Temporary and generated artifacts
+tmp/
+output/
 
 # Coverage
 .coverage

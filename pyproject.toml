@@ -1,7 +1,7 @@
 [project]
 name = "rag-course-system"
 version = "0.1.0"
-description = "Add your description here"
+description = "WeOUC 智能选课知识与对话平台"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
