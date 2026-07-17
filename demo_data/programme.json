@@ -1,0 +1,26 @@
+{
+  "tenant_id": "weouc",
+  "programme_code": "DEMO-CS-2024",
+  "programme_name": "2024级计算机科学与技术专业培养方案（演示样例）",
+  "version_code": "2024-demo",
+  "applicable_grades": ["2024"],
+  "issuing_unit": "WeOUC Demo 数据",
+  "published_at": "2026-07-17T00:00:00+08:00",
+  "source_reference": "demo_data/programme.json",
+  "rules": [
+    {
+      "rule_code": "DEMO-GE-POOL",
+      "rule_type": "elective_pool",
+      "course_category": "通识选修",
+      "priority": 10,
+      "metadata": {"demo_only": true}
+    },
+    {
+      "rule_code": "DEMO-GE-CREDITS",
+      "rule_type": "credit_requirement",
+      "course_category": "通识选修",
+      "min_credits": 8,
+      "metadata": {"demo_only": true}
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>历史课表 · WeOUC</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">W</span> WeOUC</div>
+      <nav class="nav">
+        <a href="index.html"><span data-icon="chat"></span>对话咨询</a>
+        <a href="course.html"><span data-icon="course"></span>课程详情</a>
+        <a class="active" href="history.html" data-feature="academic_history_import"><span data-icon="history"></span>历史课表</a>
+        <a href="profile.html"><span data-icon="user"></span>我的</a>
+      </nav>
+      <div class="sidebar-foot">历史课程用于排除已经修读的课程。上传后默认视为已通过，只有你确认后才会保存。</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div style="display:flex;align-items:center;gap:10px">
+          <button class="icon-btn menu-btn" data-icon="menu" aria-label="菜单"></button>
+          <span class="topbar-title">历史课表</span>
+        </div>
+        <a class="student-pill" href="profile.html"><span class="avatar">林</span><span>学生资料</span></a>
+      </header>
+      <div class="content">
+        <div class="page-head">
+          <div>
+            <div class="eyebrow">学习记录</div>
+            <h1>上传以前修读过的课程</h1>
+            <p>系统会识别课程并默认标记为“推定已通过”。挂科、退课或重修课程可以在确认前修改。</p>
+          </div>
+          <span class="badge official">仅用于选课规划</span>
+        </div>
+
+        <section class="card" id="uploadCard">
+          <div class="card-title">
+            <div>
+              <h2>1. 选择历史课表文件</h2>
+              <p class="muted small" style="margin:6px 0 0">支持 CSV、Excel、JSON、TXT、Markdown 和文本型 PDF，最大 10 MB。</p>
+            </div>
+            <span class="badge neutral" id="uploadState">等待上传</span>
+          </div>
+          <label class="upload-zone" id="uploadZone" for="historyFile">
+            <span class="upload-icon" data-icon="upload"></span>
+            <strong>选择文件或拖放到这里</strong>
+            <span class="muted small">首行最好包含课程号、课程名称、学期和学分</span>
+            <input id="historyFile" type="file" accept=".csv,.tsv,.xlsx,.xlsm,.json,.txt,.md,.pdf" hidden>
+          </label>
+          <div class="file-summary hidden" id="fileSummary">
+            <div>
+              <strong id="fileName"></strong>
+              <div class="muted small" id="fileSize"></div>
+            </div>
+            <button class="btn btn-ghost btn-sm" id="clearFile" type="button">重新选择</button>
+          </div>
+          <div class="actions" style="margin-top:16px">
+            <button class="btn btn-primary" id="uploadButton" disabled>上传并解析</button>
+          </div>
+          <div id="uploadMessage" aria-live="polite"></div>
+        </section>
+
+        <section class="card hidden" id="previewCard" style="margin-top:18px">
+          <div class="card-title">
+            <div>
+              <h2>2. 校对解析结果</h2>
+              <p class="muted small" style="margin:6px 0 0">课程状态默认是“推定已通过”。请重点检查低匹配度课程。</p>
+            </div>
+            <span class="badge risk" id="previewCount"></span>
+          </div>
+          <div id="parseWarnings"></div>
+          <div class="table-wrap" id="previewTable"></div>
+          <div class="actions" style="margin-top:18px">
+            <button class="btn btn-primary" id="confirmImport">确认并保存</button>
+            <button class="btn btn-ghost" id="cancelImport">放弃本次导入</button>
+          </div>
+          <div id="confirmMessage" aria-live="polite"></div>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="card-title">
+            <div>
+              <h2>3. 已保存的历史课程</h2>
+              <p class="muted small" style="margin:6px 0 0">选课规划会排除“推定已通过”和“已通过”的课程。</p>
+            </div>
+            <button class="btn btn-ghost btn-sm" id="refreshRecords">刷新</button>
+          </div>
+          <div id="savedRecords"><div class="status-line"><span class="spinner"></span>正在读取历史课程…</div></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html"><span data-icon="chat"></span>咨询</a>
+    <a href="course.html"><span data-icon="course"></span>课程</a>
+    <a class="active" href="history.html" data-feature="academic_history_import"><span data-icon="history"></span>历史</a>
+    <a href="profile.html"><span data-icon="user"></span>我的</a>
+  </nav>
+  <div class="toast"></div>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/history.js"></script>
+</body>
+</html>

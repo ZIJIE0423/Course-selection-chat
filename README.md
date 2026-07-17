@@ -32,9 +32,10 @@ Course-selection-chat-main/
 │   ├── assets/js/          # 页面交互、演示数据与 API 适配
 │   ├── index.html          # 对话咨询入口
 │   ├── onboarding.html     # 学生信息与培养方案确认
-│   ├── course.html         # 课程详情与依据
-│   ├── feedback.html       # 结构化经验投稿
-│   └── profile.html        # 偏好、授权与投稿状态
+│   ├── history.html        # 历史课表上传、确认与记录
+│   ├── course.html         # 实时课程详情与依据
+│   ├── feedback.html       # 第二阶段结构化经验投稿（默认关闭）
+│   └── profile.html        # 后端学生档案与历史课表摘要
 ├── 数据文件/                # 官方资料和学生评价参考
 ├── eval_outputs/           # 评测输出
 └── pyproject.toml
@@ -75,6 +76,18 @@ Course-selection-chat-main/
 4. **定时任务**：使用 APScheduler 实现每周定时采集，同时提供手动执行命令方便测试。
 
 ## 快速开始
+
+### Windows 一键演示（推荐）
+
+双击 `start_demo.bat`，或在 PowerShell 中执行：
+
+```powershell
+.\start_demo.ps1
+```
+
+脚本会同步锁定依赖、初始化独立的 `demo_course_db.sqlite`、导入演示培养方案和活动课程快照，并在 `8000` 端口同时启动 API 与 H5。随后访问 `http://127.0.0.1:8000/prototype/`。再次启动会幂等复用演示数据；若依赖已经同步，可用 `.\start_demo.ps1 -SkipSync` 加快启动。
+
+演示课程和培养方案位于 `demo_data/`，均明确标记为样例数据。可在“历史课表”页面上传 `demo_data/history.csv`，完整体验上传确认、已修排除、自然语言筛选和真实课程详情。
 
 ### 1. 环境准备
 
@@ -224,15 +237,47 @@ uv run uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 - `http://127.0.0.1:8000/`：自动进入前端原型；
 - `http://127.0.0.1:8000/prototype/`：对话咨询首页；
 - `http://127.0.0.1:8000/prototype/onboarding.html`：首次信息确认与培养方案匹配；
+- `http://127.0.0.1:8000/prototype/history.html`：历史课表上传与确认；
 - `http://127.0.0.1:8000/docs`：FastAPI 交互式接口文档。
 
 前端由 FastAPI 同源挂载，不需要单独安装 Node.js 依赖或执行构建命令。
 
 ## 前端原型与接口状态
 
+### 当前可演示状态
+
+当前版本已经可以作为第一阶段 Demo 使用：一键启动后，学生可以确认后端学生档案、上传历史课表、确认培养方案、输入自然语言选课要求、查看筛选结果，并进入读取真实课程快照的课程详情页。课程反馈和学生评价模块仍由能力开关关闭。
+
+本地演示入口：
+
+```text
+双击 start_demo.bat
+→ http://127.0.0.1:8000/prototype/
+```
+
+演示数据库为项目目录下的 `demo_course_db.sqlite`，由 `app/scripts/seed_demo.py` 幂等初始化；该数据库和运行时缓存不会提交到 Git。
+
+### 标准化选课规划第一阶段
+
+项目已新增可独立启停的第一阶段选课规划模块，覆盖：培养方案版本与规则导入、当前学期课程快照、历史课表上传与确认、自然语言约束解析、已修课程排除和确定性课程筛选。课程反馈、学生评价 RAG 和课表冲突默认关闭。
+
+标准接口与接入约定见 [`docs/第一阶段标准接口契约.md`](docs/第一阶段标准接口契约.md)。H5 可通过 `GET /api/v1/capabilities` 获取当前模块能力，按配置决定展示入口。
+
 ### 已连接接口
 
-对话页调用现有 `POST /api/v1/chat` 接口，并解析 SSE 流式事件：
+对话页会先通过 `GET /api/v1/planning/context` 获取当前活动课程快照与培养方案。选课推荐和历史课程状态纠正使用 `POST /api/v1/planning/sessions`，经学生确认后分别调用规划执行或历史状态确认接口；课程事实等普通问答仍调用现有 `POST /api/v1/chat` SSE 接口。
+
+推荐流程：
+
+```text
+输入自然语言需求
+→ 创建规划会话
+→ 展示并确认结构化条件
+→ 确定性筛选
+→ 展示真实推荐卡片与快照依据
+```
+
+普通问答流式事件：
 
 | 当前事件 | 前端行为 |
 |---|---|
@@ -249,27 +294,26 @@ uv run uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 }
 ```
 
-### 待补充学生端接口
+### 学生端数据边界
 
-以下流程已经完成高保真交互，但后端尚无对应学生端 API，当前使用代表性数据和 `localStorage` 演示：
+学生资料通过 `GET/PUT /api/v1/student/profile` 持久化到后端，浏览器只保留当前演示身份指针；历史课表通过 `/api/v1/academic-history` 上传、确认和查询；推荐结果中的 `offering_id` 通过 `GET /api/v1/catalog/offerings/{offering_id}` 读取真实课程详情。课程评价、经验投稿和学生评价 RAG 属于第二阶段，能力开关默认关闭，H5 不展示反馈入口。
 
-- 学生信息与培养方案匹配、确认和修改；
-- 个人课表授权状态与冲突检查；
-- 课程详情和结构化课程方案；
-- 选课长期偏好的新增、编辑和删除；
-- 经验投稿的草稿、预览、提交、撤回和状态管理。
+尚未实现的是正式公众号登录 Ticket 换取后端身份、长期偏好管理、课表时间冲突和第二阶段反馈审核，而不是第一阶段 Demo 的主链路。
 
-建议后端后续按前端 PRD 扩展 `requirement_confirmation`、`answer_delta`、`course_card`、`source_card`、`warning`、`done` 和 `error` 等 SSE 事件。前端事件适配入口位于 `frontend/assets/js/chat.js`。
+### 部署说明
+
+`start_demo.ps1` 面向本地开发和演示，依赖本机安装 `uv`。正式接入微信小程序时，建议使用 HTTPS 域名和云端部署：FastAPI 以 Docker 或云平台服务运行，数据库使用托管 MySQL，课表文件使用对象存储，并通过服务端登录 Ticket 管理 `tenant_id/user_id`。个人电脑不作为正式生产服务器。
 
 ### 前端页面
 
 | 页面 | 文件 | 主要能力 |
 |---|---|---|
 | 对话咨询 | `frontend/index.html` | 快捷问题、需求确认、流式回答、课程卡和来源详情 |
-| 信息确认 | `frontend/onboarding.html` | 年级/学院/专业、转专业信息和培养方案确认 |
-| 课程详情 | `frontend/course.html` | 官方课程事实、培养方案关系和学生经验聚合 |
-| 经验投稿 | `frontend/feedback.html` | 结构化反馈、草稿、预览确认和审核中结果 |
-| 我的 | `frontend/profile.html` | 学生信息、偏好、课表授权和投稿状态 |
+| 信息确认 | `frontend/onboarding.html` | 年级/学院/专业与后端培养方案确认 |
+| 历史课表 | `frontend/history.html` | 文件上传、解析预览、确认和已修记录 |
+| 课程详情 | `frontend/course.html` | 活动课程快照、培养方案关系和已修状态 |
+| 经验投稿 | `frontend/feedback.html` | 第二阶段模块，默认由能力开关隐藏 |
+| 我的 | `frontend/profile.html` | 后端学生档案、培养方案和历史课表摘要 |
 
 原型支持桌面端和小程序常见窄屏宽度；来源等级、风险与审核状态同时使用文字和颜色表达。
 
