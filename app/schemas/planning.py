@@ -182,6 +182,45 @@ class RequirementItem(BaseModel):
     value: Any
     source_text: str | None = None
 
+    @model_validator(mode="after")
+    def validate_supported_requirement(self):
+        supported_operators = {
+            "campus": {"eq", "contains"},
+            "course_category": {"eq", "contains"},
+            "teacher_name": {"eq", "contains"},
+            "weekday": {"eq"},
+            "course_code": {"eq"},
+            "credits": {"eq", "gte", "lte"},
+            "avoid_period": {"neq"},
+        }
+        if self.type not in supported_operators:
+            raise ValueError(f"unsupported requirement type: {self.type}")
+        if self.operator not in supported_operators[self.type]:
+            raise ValueError(
+                f"operator '{self.operator}' is not supported for requirement type '{self.type}'"
+            )
+        if self.type in {"weekday", "avoid_period"}:
+            try:
+                numeric_value = int(self.value)
+            except (TypeError, ValueError) as exc:
+                raise ValueError(f"{self.type} must be an integer") from exc
+            if self.type == "weekday" and not 1 <= numeric_value <= 7:
+                raise ValueError("weekday must be between 1 and 7")
+            if self.type == "avoid_period" and numeric_value <= 0:
+                raise ValueError("avoid_period must be positive")
+            self.value = numeric_value
+        elif self.type == "credits":
+            try:
+                numeric_value = float(self.value)
+            except (TypeError, ValueError) as exc:
+                raise ValueError("credits must be numeric") from exc
+            if numeric_value < 0:
+                raise ValueError("credits must be non-negative")
+            self.value = numeric_value
+        elif not isinstance(self.value, str) or not self.value.strip():
+            raise ValueError(f"{self.type} must be a non-empty string")
+        return self
+
 
 class HistoryCorrectionCandidate(BaseModel):
     record_id: int

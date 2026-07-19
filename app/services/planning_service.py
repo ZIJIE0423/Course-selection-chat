@@ -137,6 +137,7 @@ def recommend_courses(
 
     snapshot = db.query(CourseOfferingSnapshot).filter(
         CourseOfferingSnapshot.id == session.snapshot_id,
+        CourseOfferingSnapshot.tenant_id == session.tenant_id,
         CourseOfferingSnapshot.status == "active",
     ).first()
     if not snapshot:
@@ -193,7 +194,12 @@ def recommend_courses(
             if not in_programme_scope:
                 continue
 
-        schedules = json.loads(offering.schedule_json or "[]")
+        try:
+            schedules = json.loads(offering.schedule_json or "[]")
+        except (TypeError, json.JSONDecodeError):
+            schedules = []
+        if not isinstance(schedules, list):
+            schedules = []
         if not all(_matches_constraint(offering, schedules, item) for item in payload.constraints):
             continue
 

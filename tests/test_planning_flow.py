@@ -291,6 +291,21 @@ class PlanningFlowTest(unittest.TestCase):
         self.assertEqual(correction_confirm.status_code, 200, correction_confirm.text)
         self.assertEqual(correction_confirm.json()["completion_status"], "failed")
 
+    def test_requirement_contract_rejects_unsupported_or_invalid_values(self):
+        invalid_items = [
+            {"type": "unknown_filter", "operator": "eq", "value": "x"},
+            {"type": "weekday", "operator": "eq", "value": 8},
+            {"type": "credits", "operator": "contains", "value": 2},
+            {"type": "avoid_period", "operator": "neq", "value": 0},
+            {"type": "campus", "operator": "contains", "value": ""},
+        ]
+        for item in invalid_items:
+            response = self.client.post(
+                "/api/v1/planning/sessions/missing/requirements/confirm",
+                json={"constraints": [item], "preferences": []},
+            )
+            self.assertEqual(response.status_code, 422, response.text)
+
 
 if __name__ == "__main__":
     unittest.main()

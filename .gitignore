@@ -37,6 +37,7 @@ build/
 chroma_data/
 *.sqlite
 *.db
+部分真实数据/
 
 # Logs
 *.log
