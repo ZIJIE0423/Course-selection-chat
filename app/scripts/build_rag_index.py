@@ -14,14 +14,17 @@ def main():
     parser.add_argument("--rebuild", action="store_true", help="清空旧索引后重建")
     args = parser.parse_args()
 
-    data_dir = project_root / '数据文件'
+    data_dirs = [project_root / '数据文件', project_root / 'demo_data' / 'm1_synthetic' / 'knowledge']
     
     if args.rebuild:
         print("清理旧的 ChromaDB 索引...")
         clear_vector_store()
         
-    print(f"正在从 {data_dir} 读取 Markdown 文件...")
-    docs = load_all_documents(data_dir)
+    print("正在读取基础资料与 M1 合成补充资料...")
+    docs = []
+    for data_dir in data_dirs:
+        if data_dir.exists():
+            docs.extend(load_all_documents(data_dir))
     
     if not docs:
         print("未找到需要处理的文档。")

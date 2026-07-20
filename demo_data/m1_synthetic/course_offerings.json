@@ -1,0 +1,4488 @@
+{
+  "tenant_id": "weouc-synthetic",
+  "semester": "2026-2027-1",
+  "snapshot_id": "m1-synthetic-course-data-v1",
+  "generated_at": "2026-07-19T00:00:00+00:00",
+  "courses": [
+    {
+      "external_offering_id": "synthetic-section-001",
+      "course_code": "SYN001",
+      "course_name": "学术写作（模拟001）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 100"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-002",
+      "course_code": "SYN002",
+      "course_name": "数据分析导论（模拟002）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 101"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-003",
+      "course_code": "SYN003",
+      "course_name": "海洋文化（模拟003）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 102"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-004",
+      "course_code": "SYN004",
+      "course_name": "创新方法（模拟004）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 103"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-005",
+      "course_code": "SYN005",
+      "course_name": "信息伦理（模拟005）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 104"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-006",
+      "course_code": "SYN006",
+      "course_name": "科学传播（模拟006）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 105"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-007",
+      "course_code": "SYN007",
+      "course_name": "学术写作（模拟007）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 106"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-008",
+      "course_code": "SYN008",
+      "course_name": "数据分析导论（模拟008）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 107"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-009",
+      "course_code": "SYN009",
+      "course_name": "海洋文化（模拟009）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 108"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-010",
+      "course_code": "SYN010",
+      "course_name": "创新方法（模拟010）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 109"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-011",
+      "course_code": "SYN011",
+      "course_name": "信息伦理（模拟011）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 110"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-012",
+      "course_code": "SYN012",
+      "course_name": "科学传播（模拟012）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 111"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-013",
+      "course_code": "SYN013",
+      "course_name": "学术写作（模拟013）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 112"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-014",
+      "course_code": "SYN014",
+      "course_name": "数据分析导论（模拟014）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 113"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 13,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-015",
+      "course_code": "SYN015",
+      "course_name": "海洋文化（模拟015）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 114"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 14,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-016",
+      "course_code": "SYN016",
+      "course_name": "创新方法（模拟016）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 115"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 15,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-017",
+      "course_code": "SYN017",
+      "course_name": "信息伦理（模拟017）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 116"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 16,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-018",
+      "course_code": "SYN018",
+      "course_name": "科学传播（模拟018）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 117"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 17,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-019",
+      "course_code": "SYN019",
+      "course_name": "学术写作（模拟019）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 118"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 18,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-020",
+      "course_code": "SYN020",
+      "course_name": "数据分析导论（模拟020）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 119"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 19,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-021",
+      "course_code": "SYN021",
+      "course_name": "海洋文化（模拟021）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 120"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 20,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-022",
+      "course_code": "SYN022",
+      "course_name": "创新方法（模拟022）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 121"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-023",
+      "course_code": "SYN023",
+      "course_name": "信息伦理（模拟023）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 122"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-024",
+      "course_code": "SYN024",
+      "course_name": "科学传播（模拟024）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 123"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-025",
+      "course_code": "SYN025",
+      "course_name": "学术写作（模拟025）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 124"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-026",
+      "course_code": "SYN026",
+      "course_name": "数据分析导论（模拟026）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 125"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-027",
+      "course_code": "SYN027",
+      "course_name": "海洋文化（模拟027）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 126"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-028",
+      "course_code": "SYN028",
+      "course_name": "创新方法（模拟028）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 127"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-029",
+      "course_code": "SYN029",
+      "course_name": "信息伦理（模拟029）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 128"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-030",
+      "course_code": "SYN030",
+      "course_name": "科学传播（模拟030）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 129"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-031",
+      "course_code": "SYN031",
+      "course_name": "学术写作（模拟031）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 130"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-032",
+      "course_code": "SYN032",
+      "course_name": "数据分析导论（模拟032）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 131"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-033",
+      "course_code": "SYN033",
+      "course_name": "海洋文化（模拟033）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 132"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-034",
+      "course_code": "SYN034",
+      "course_name": "创新方法（模拟034）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 133"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-035",
+      "course_code": "SYN035",
+      "course_name": "信息伦理（模拟035）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 134"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 13,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-036",
+      "course_code": "SYN036",
+      "course_name": "科学传播（模拟036）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 135"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 14,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-037",
+      "course_code": "SYN037",
+      "course_name": "学术写作（模拟037）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 136"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 15,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-038",
+      "course_code": "SYN038",
+      "course_name": "数据分析导论（模拟038）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 137"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 16,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-039",
+      "course_code": "SYN039",
+      "course_name": "海洋文化（模拟039）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 138"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 17,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-040",
+      "course_code": "SYN040",
+      "course_name": "创新方法（模拟040）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 139"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 18,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-041",
+      "course_code": "SYN041",
+      "course_name": "信息伦理（模拟041）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 140"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 19,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-042",
+      "course_code": "SYN042",
+      "course_name": "科学传播（模拟042）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 141"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 20,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-043",
+      "course_code": "SYN043",
+      "course_name": "学术写作（模拟043）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 142"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-044",
+      "course_code": "SYN044",
+      "course_name": "数据分析导论（模拟044）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 143"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-045",
+      "course_code": "SYN045",
+      "course_name": "海洋文化（模拟045）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 144"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-046",
+      "course_code": "SYN046",
+      "course_name": "创新方法（模拟046）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 145"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-047",
+      "course_code": "SYN047",
+      "course_name": "信息伦理（模拟047）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 146"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-048",
+      "course_code": "SYN048",
+      "course_name": "科学传播（模拟048）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 147"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-049",
+      "course_code": "SYN049",
+      "course_name": "学术写作（模拟049）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 148"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-050",
+      "course_code": "SYN050",
+      "course_name": "数据分析导论（模拟050）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 149"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-051",
+      "course_code": "SYN051",
+      "course_name": "海洋文化（模拟051）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 150"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-052",
+      "course_code": "SYN052",
+      "course_name": "创新方法（模拟052）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 151"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-053",
+      "course_code": "SYN053",
+      "course_name": "信息伦理（模拟053）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 152"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-054",
+      "course_code": "SYN054",
+      "course_name": "科学传播（模拟054）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 153"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-055",
+      "course_code": "SYN055",
+      "course_name": "学术写作（模拟055）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 154"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-056",
+      "course_code": "SYN056",
+      "course_name": "数据分析导论（模拟056）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 155"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 13,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-057",
+      "course_code": "SYN057",
+      "course_name": "海洋文化（模拟057）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 156"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 14,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-058",
+      "course_code": "SYN058",
+      "course_name": "创新方法（模拟058）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 157"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 15,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-059",
+      "course_code": "SYN059",
+      "course_name": "信息伦理（模拟059）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 158"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 16,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-060",
+      "course_code": "SYN060",
+      "course_name": "科学传播（模拟060）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 159"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 17,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-061",
+      "course_code": "SYN061",
+      "course_name": "学术写作（模拟061）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 160"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 18,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-062",
+      "course_code": "SYN062",
+      "course_name": "数据分析导论（模拟062）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 161"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 19,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-063",
+      "course_code": "SYN063",
+      "course_name": "海洋文化（模拟063）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 162"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 20,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-064",
+      "course_code": "SYN064",
+      "course_name": "创新方法（模拟064）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 163"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-065",
+      "course_code": "SYN065",
+      "course_name": "信息伦理（模拟065）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 164"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-066",
+      "course_code": "SYN066",
+      "course_name": "科学传播（模拟066）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 165"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-067",
+      "course_code": "SYN067",
+      "course_name": "学术写作（模拟067）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 166"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-068",
+      "course_code": "SYN068",
+      "course_name": "数据分析导论（模拟068）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 167"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-069",
+      "course_code": "SYN069",
+      "course_name": "海洋文化（模拟069）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 168"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-070",
+      "course_code": "SYN070",
+      "course_name": "创新方法（模拟070）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 169"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-071",
+      "course_code": "SYN071",
+      "course_name": "信息伦理（模拟071）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 170"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-072",
+      "course_code": "SYN072",
+      "course_name": "科学传播（模拟072）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 171"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-073",
+      "course_code": "SYN073",
+      "course_name": "学术写作（模拟073）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 172"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-074",
+      "course_code": "SYN074",
+      "course_name": "数据分析导论（模拟074）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 173"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-075",
+      "course_code": "SYN075",
+      "course_name": "海洋文化（模拟075）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 174"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-076",
+      "course_code": "SYN076",
+      "course_name": "创新方法（模拟076）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 175"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-077",
+      "course_code": "SYN077",
+      "course_name": "信息伦理（模拟077）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 176"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 13,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-078",
+      "course_code": "SYN078",
+      "course_name": "科学传播（模拟078）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 177"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 14,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-079",
+      "course_code": "SYN079",
+      "course_name": "学术写作（模拟079）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 178"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 15,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-080",
+      "course_code": "SYN080",
+      "course_name": "数据分析导论（模拟080）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 179"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 16,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-081",
+      "course_code": "SYN081",
+      "course_name": "海洋文化（模拟081）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 180"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 17,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-082",
+      "course_code": "SYN082",
+      "course_name": "创新方法（模拟082）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 181"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 18,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-083",
+      "course_code": "SYN083",
+      "course_name": "信息伦理（模拟083）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 182"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 19,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-084",
+      "course_code": "SYN084",
+      "course_name": "科学传播（模拟084）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 183"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 20,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-085",
+      "course_code": "SYN085",
+      "course_name": "学术写作（模拟085）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 184"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-086",
+      "course_code": "SYN086",
+      "course_name": "数据分析导论（模拟086）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 185"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-087",
+      "course_code": "SYN087",
+      "course_name": "海洋文化（模拟087）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 186"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-088",
+      "course_code": "SYN088",
+      "course_name": "创新方法（模拟088）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 187"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-089",
+      "course_code": "SYN089",
+      "course_name": "信息伦理（模拟089）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 188"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-090",
+      "course_code": "SYN090",
+      "course_name": "科学传播（模拟090）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 189"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-091",
+      "course_code": "SYN091",
+      "course_name": "学术写作（模拟091）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 190"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-092",
+      "course_code": "SYN092",
+      "course_name": "数据分析导论（模拟092）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 191"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-093",
+      "course_code": "SYN093",
+      "course_name": "海洋文化（模拟093）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 192"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-094",
+      "course_code": "SYN094",
+      "course_name": "创新方法（模拟094）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 193"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-095",
+      "course_code": "SYN095",
+      "course_name": "信息伦理（模拟095）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 194"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-096",
+      "course_code": "SYN096",
+      "course_name": "科学传播（模拟096）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 195"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-097",
+      "course_code": "SYN097",
+      "course_name": "学术写作（模拟097）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 196"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-098",
+      "course_code": "SYN098",
+      "course_name": "数据分析导论（模拟098）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 197"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 13,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-099",
+      "course_code": "SYN099",
+      "course_name": "海洋文化（模拟099）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 198"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 14,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-100",
+      "course_code": "SYN100",
+      "course_name": "创新方法（模拟100）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 199"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 15,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-101",
+      "course_code": "SYN101",
+      "course_name": "信息伦理（模拟101）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 200"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 16,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-102",
+      "course_code": "SYN102",
+      "course_name": "科学传播（模拟102）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 201"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 17,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-103",
+      "course_code": "SYN103",
+      "course_name": "学术写作（模拟103）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 202"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 18,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-104",
+      "course_code": "SYN104",
+      "course_name": "数据分析导论（模拟104）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 203"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 19,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-105",
+      "course_code": "SYN105",
+      "course_name": "海洋文化（模拟105）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 204"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 20,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-106",
+      "course_code": "SYN106",
+      "course_name": "创新方法（模拟106）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 205"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-107",
+      "course_code": "SYN107",
+      "course_name": "信息伦理（模拟107）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 206"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-108",
+      "course_code": "SYN108",
+      "course_name": "科学传播（模拟108）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 207"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-109",
+      "course_code": "SYN109",
+      "course_name": "学术写作（模拟109）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 208"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-110",
+      "course_code": "SYN110",
+      "course_name": "数据分析导论（模拟110）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 209"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-111",
+      "course_code": "SYN111",
+      "course_name": "海洋文化（模拟111）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 210"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-112",
+      "course_code": "SYN112",
+      "course_name": "创新方法（模拟112）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 211"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-113",
+      "course_code": "SYN113",
+      "course_name": "信息伦理（模拟113）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 212"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-114",
+      "course_code": "SYN114",
+      "course_name": "科学传播（模拟114）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 213"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-115",
+      "course_code": "SYN115",
+      "course_name": "学术写作（模拟115）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 214"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-116",
+      "course_code": "SYN116",
+      "course_name": "数据分析导论（模拟116）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 215"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-117",
+      "course_code": "SYN117",
+      "course_name": "海洋文化（模拟117）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 216"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-118",
+      "course_code": "SYN118",
+      "course_name": "创新方法（模拟118）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 217"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-119",
+      "course_code": "SYN119",
+      "course_name": "信息伦理（模拟119）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 218"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 13,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-120",
+      "course_code": "SYN120",
+      "course_name": "科学传播（模拟120）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 219"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 14,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-121",
+      "course_code": "SYN121",
+      "course_name": "学术写作（模拟121）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 220"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 15,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-122",
+      "course_code": "SYN122",
+      "course_name": "数据分析导论（模拟122）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 221"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 16,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-123",
+      "course_code": "SYN123",
+      "course_name": "海洋文化（模拟123）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 222"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 17,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-124",
+      "course_code": "SYN124",
+      "course_name": "创新方法（模拟124）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 223"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 18,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-125",
+      "course_code": "SYN125",
+      "course_name": "信息伦理（模拟125）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 224"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 19,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-126",
+      "course_code": "SYN126",
+      "course_name": "科学传播（模拟126）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 225"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 20,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-127",
+      "course_code": "SYN127",
+      "course_name": "学术写作（模拟127）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 226"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-128",
+      "course_code": "SYN128",
+      "course_name": "数据分析导论（模拟128）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 227"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-129",
+      "course_code": "SYN129",
+      "course_name": "海洋文化（模拟129）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 228"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-130",
+      "course_code": "SYN130",
+      "course_name": "创新方法（模拟130）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 229"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-131",
+      "course_code": "SYN131",
+      "course_name": "信息伦理（模拟131）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 230"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-132",
+      "course_code": "SYN132",
+      "course_name": "科学传播（模拟132）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 231"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-133",
+      "course_code": "SYN133",
+      "course_name": "学术写作（模拟133）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 232"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-134",
+      "course_code": "SYN134",
+      "course_name": "数据分析导论（模拟134）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 233"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-135",
+      "course_code": "SYN135",
+      "course_name": "海洋文化（模拟135）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 234"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-136",
+      "course_code": "SYN136",
+      "course_name": "创新方法（模拟136）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 235"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-137",
+      "course_code": "SYN137",
+      "course_name": "信息伦理（模拟137）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 236"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-138",
+      "course_code": "SYN138",
+      "course_name": "科学传播（模拟138）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 237"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-139",
+      "course_code": "SYN139",
+      "course_name": "学术写作（模拟139）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 238"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-140",
+      "course_code": "SYN140",
+      "course_name": "数据分析导论（模拟140）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 239"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 13,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-141",
+      "course_code": "SYN141",
+      "course_name": "海洋文化（模拟141）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 240"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 14,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-142",
+      "course_code": "SYN142",
+      "course_name": "创新方法（模拟142）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 241"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 15,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-143",
+      "course_code": "SYN143",
+      "course_name": "信息伦理（模拟143）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 242"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 16,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-144",
+      "course_code": "SYN144",
+      "course_name": "科学传播（模拟144）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 243"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 17,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-145",
+      "course_code": "SYN145",
+      "course_name": "学术写作（模拟145）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 244"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 18,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-146",
+      "course_code": "SYN146",
+      "course_name": "数据分析导论（模拟146）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 245"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 19,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-147",
+      "course_code": "SYN147",
+      "course_name": "海洋文化（模拟147）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 246"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 20,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-148",
+      "course_code": "SYN148",
+      "course_name": "创新方法（模拟148）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 247"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 0,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-149",
+      "course_code": "SYN149",
+      "course_name": "信息伦理（模拟149）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_05",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 248"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 1,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-150",
+      "course_code": "SYN150",
+      "course_name": "科学传播（模拟150）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_06",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 249"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 2,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-151",
+      "course_code": "SYN151",
+      "course_name": "学术写作（模拟151）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "崂山校区",
+      "teacher_name": "教师_07",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 250"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 3,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-152",
+      "course_code": "SYN152",
+      "course_name": "数据分析导论（模拟152）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_08",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 251"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 4,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-153",
+      "course_code": "SYN153",
+      "course_name": "海洋文化（模拟153）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_09",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 252"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 5,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-154",
+      "course_code": "SYN154",
+      "course_name": "创新方法（模拟154）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "崂山校区",
+      "teacher_name": "教师_10",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 253"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 6,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-155",
+      "course_code": "SYN155",
+      "course_name": "信息伦理（模拟155）",
+      "credits": 1.5,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_11",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 254"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 7,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-156",
+      "course_code": "SYN156",
+      "course_name": "科学传播（模拟156）",
+      "credits": 2.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_12",
+      "schedules": [
+        {
+          "weekday": 1,
+          "periods": [
+            6,
+            7
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 255"
+        }
+      ],
+      "capacity": 40,
+      "remaining_capacity": 8,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-157",
+      "course_code": "SYN157",
+      "course_name": "学术写作（模拟157）",
+      "credits": 1.0,
+      "course_category": "通识选修",
+      "department": "模拟学院1",
+      "campus": "崂山校区",
+      "teacher_name": "教师_01",
+      "schedules": [
+        {
+          "weekday": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 256"
+        }
+      ],
+      "capacity": 50,
+      "remaining_capacity": 9,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-158",
+      "course_code": "SYN158",
+      "course_name": "数据分析导论（模拟158）",
+      "credits": 1.5,
+      "course_category": "专业选修",
+      "department": "模拟学院2",
+      "campus": "鱼山校区",
+      "teacher_name": "教师_02",
+      "schedules": [
+        {
+          "weekday": 3,
+          "periods": [
+            2,
+            3
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 257"
+        }
+      ],
+      "capacity": 60,
+      "remaining_capacity": 10,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-159",
+      "course_code": "SYN159",
+      "course_name": "海洋文化（模拟159）",
+      "credits": 2.0,
+      "course_category": "通识选修",
+      "department": "模拟学院3",
+      "campus": "西海岸校区",
+      "teacher_name": "教师_03",
+      "schedules": [
+        {
+          "weekday": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 258"
+        }
+      ],
+      "capacity": 70,
+      "remaining_capacity": 11,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    },
+    {
+      "external_offering_id": "synthetic-section-160",
+      "course_code": "SYN160",
+      "course_name": "创新方法（模拟160）",
+      "credits": 1.0,
+      "course_category": "专业选修",
+      "department": "模拟学院4",
+      "campus": "崂山校区",
+      "teacher_name": "教师_04",
+      "schedules": [
+        {
+          "weekday": 5,
+          "periods": [
+            4,
+            5
+          ],
+          "weeks": "1-16",
+          "location": "模拟教学楼 259"
+        }
+      ],
+      "capacity": 80,
+      "remaining_capacity": 12,
+      "source_updated_at": "2026-07-19T00:00:00+00:00",
+      "extra": {
+        "synthetic": true,
+        "data_classification": "synthetic"
+      }
+    }
+  ]
+}

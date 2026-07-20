@@ -1,0 +1,13 @@
+{
+  "dataset_version": "m1-eval-supplement-v1",
+  "classification": "synthetic",
+  "courses": [
+    {"code": "SYN-LIN-001", "name": "线性代数", "credit": 3, "semester": "2026-2027-1", "department": "数学科学学院", "teachers": "李晓敏", "course_level": "公共基础必修课"},
+    {"code": "SYN-DIG-001", "name": "数字逻辑", "credit": 3, "semester": "2026-2027-1", "department": "信息科学与工程学部", "teachers": "王凌", "course_level": "专业基础必修课"},
+    {"code": "SYN-ECO-001", "name": "微观经济学", "credit": 3, "semester": "2026-2027-1", "department": "经济学院", "teachers": "陈明", "course_level": "专业基础课"},
+    {"code": "SYN-CAL-001", "name": "微积分", "credit": 4, "semester": "2026-2027-1", "department": "数学科学学院", "teachers": "赵宁", "course_level": "公共基础课"},
+    {"code": "SYN-MAT-002", "name": "高等数学Ⅱ", "credit": 5, "semester": "2026-2027-1", "department": "数学科学学院", "teachers": "周怡", "course_level": "公共基础必修课"},
+    {"code": "SYN-GEO-001", "name": "环境地质概论", "credit": 2, "semester": "2026-2027-1", "department": "海洋地球科学学院", "teachers": "吴晓", "course_level": "通识教育选修课"},
+    {"code": "SYN-ENG-004", "name": "大四工程设计", "credit": 14, "semester": "2026-2027-1", "department": "工程学院", "teachers": "刘工", "course_level": "专业必修课"}
+  ]
+}

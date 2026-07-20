@@ -1,0 +1,18 @@
+{
+  "dataset_version": "m1-synthetic-course-data-v1",
+  "data_classification": "synthetic",
+  "contains_real_data": false,
+  "generated_at": "2026-07-20T03:14:38.329813+00:00",
+  "files": [
+    "course_offerings.json",
+    "programme.json",
+    "history.csv"
+  ],
+  "prohibited_fields": [
+    "student_id",
+    "student_name",
+    "phone",
+    "email",
+    "identity_number"
+  ]
+}

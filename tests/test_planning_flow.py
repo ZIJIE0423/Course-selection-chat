@@ -117,6 +117,7 @@ class PlanningFlowTest(unittest.TestCase):
                     "teacher_name": "张老师",
                     "schedules": [{"weekday": 2, "periods": [5, 6], "weeks": "1-16"}],
                     "remaining_capacity": 20,
+                    "source_updated_at": generated_at,
                 },
                 {
                     "external_offering_id": "section-c002",
@@ -128,6 +129,7 @@ class PlanningFlowTest(unittest.TestCase):
                     "teacher_name": "李老师",
                     "schedules": [{"weekday": 2, "periods": [5, 6], "weeks": "1-16"}],
                     "remaining_capacity": 30,
+                    "source_updated_at": generated_at,
                 },
                 {
                     "external_offering_id": "section-c003",
@@ -139,6 +141,7 @@ class PlanningFlowTest(unittest.TestCase):
                     "teacher_name": "王老师",
                     "schedules": [{"weekday": 2, "periods": [5, 6], "weeks": "1-16"}],
                     "remaining_capacity": 40,
+                    "source_updated_at": generated_at,
                 },
             ],
         }
@@ -245,6 +248,10 @@ class PlanningFlowTest(unittest.TestCase):
         self.assertEqual(recommendation["total_candidates"], 1)
         self.assertEqual(recommendation["recommendations"][0]["course_code"], "C002")
         self.assertTrue(any("workload" in warning for warning in recommendation["warnings"]))
+        evidence = recommendation["recommendations"][0]["evidence"][0]
+        self.assertEqual(evidence["source_tier"], "official_structured_snapshot")
+        self.assertEqual(evidence["field_completeness"], "complete")
+        self.assertEqual(evidence["freshness"], "current")
 
         offering_id = recommendation["recommendations"][0]["offering_id"]
         course_detail = self.client.get(

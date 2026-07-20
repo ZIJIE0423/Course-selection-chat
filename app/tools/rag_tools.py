@@ -1,10 +1,17 @@
 from app.rag.vector_store import get_vector_store
 
 
+def _normalize_query(query: str) -> str:
+    for prefix in ("请基于已收录的选课资料回答：", "选课咨询：", "我想确认一下，", "仅依据可验证来源说明："):
+        if query.startswith(prefix):
+            return query[len(prefix):].strip()
+    return query
+
+
 def retrieve_official_docs(query: str, top_k: int = 5):
     vector_store = get_vector_store()
     results = vector_store.similarity_search(
-        query,
+        _normalize_query(query),
         k=top_k,
         filter={"source_tier": "tier_2_official_document"},
     )
@@ -14,7 +21,7 @@ def retrieve_official_docs(query: str, top_k: int = 5):
 def retrieve_student_reviews(query: str, top_k: int = 5):
     vector_store = get_vector_store()
     results = vector_store.similarity_search(
-        query,
+        _normalize_query(query),
         k=top_k,
         filter={"source_tier": "tier_3_student_review"},
     )
@@ -23,14 +30,14 @@ def retrieve_student_reviews(query: str, top_k: int = 5):
 
 def retrieve_all_knowledge(query: str, top_k: int = 8):
     vector_store = get_vector_store()
-    results = vector_store.similarity_search(query, k=top_k)
+    results = vector_store.similarity_search(_normalize_query(query), k=top_k)
     return results
 
 
 def retrieve_notices(query: str, top_k: int = 5):
     vector_store = get_vector_store()
     results = vector_store.similarity_search(
-        query,
+        _normalize_query(query),
         k=top_k,
         filter={"source_type": "official_notice"},
     )
@@ -49,7 +56,7 @@ def format_rag_evidence(docs) -> str:
         source_url = meta.get("source_url", "")
         is_official = "官方" if meta.get("is_official") else "非官方"
 
-        content_snippet = doc.page_content.replace("\n", " ")[:150] + "..."
+        content_snippet = doc.page_content.replace("\n", " ")[:350] + "..."
 
         part = f"[{i+1}] 文件名: {file_name} | 类型: {source_type} ({is_official})"
         if source_url:

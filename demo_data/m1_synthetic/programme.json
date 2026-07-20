@@ -1,0 +1,17 @@
+{
+  "tenant_id": "weouc-synthetic",
+  "programme_code": "SYN-CS-2026",
+  "programme_name": "计算机科学培养方案（模拟）",
+  "version_code": "m1-synthetic-course-data-v1",
+  "rules": [
+    {
+      "rule_code": "SYN-GE-6",
+      "rule_type": "credit_requirement",
+      "course_category": "通识选修",
+      "min_credits": 6,
+      "metadata": {
+        "synthetic": true
+      }
+    }
+  ]
+}

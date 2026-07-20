@@ -1,93 +1,49 @@
-import json
+"""Metrics for the M1 structured-data and safe-planning acceptance suite."""
 
-def calculate_route_accuracy(results):
-    correct = sum(1 for r in results if r["predicted_route"] == r["expected_route"])
-    return correct / len(results) if results else 0
+from __future__ import annotations
 
-def calculate_source_type_accuracy(results):
-    correct = sum(1 for r in results if r["predicted_source_type"] == r["expected_source_type"])
-    return correct / len(results) if results else 0
+import math
 
-def calculate_abstain_accuracy(results):
-    # should_abstain=True means it should decline. 
-    # we consider it declined if "未找到", "未检索到", "不足" is in the answer.
-    correct = 0
-    for r in results:
-        is_abstained = any(kw in r["answer"] for kw in ["未找到", "未检索到", "不足", "没有找到"])
-        if r["should_abstain"] == is_abstained:
-            correct += 1
-    return correct / len(results) if results else 0
 
-def calculate_citation_coverage(results):
-    # Check if the answer cites the source type correctly based on the prompt policies
-    # "根据课程结构化数据库查询结果", "官方文档", "学生评价仅作为非官方参考" etc.
-    correct = 0
-    for r in results:
-        if r["predicted_source_type"] == "official_structured_db":
-            if "来源" in r["answer"] or "数据库" in r["answer"] or "未找到" in r["answer"]:
-                correct += 1
-        elif r["predicted_source_type"] == "official_document_rag":
-            if "来源" in r["answer"] or "官方" in r["answer"] or "未找到" in r["answer"]:
-                correct += 1
-        elif r["predicted_source_type"] == "student_review_rag":
-            if "来源" in r["answer"] or "非官方" in r["answer"] or "评价" in r["answer"] or "未找到" in r["answer"]:
-                correct += 1
-        elif r["predicted_source_type"] == "hybrid":
-            if "来源" in r["answer"] or ("官方" in r["answer"] and "评价" in r["answer"]) or "未找到" in r["answer"]:
-                correct += 1
-        else:
-            # fallback or unknown
-            if "未找到" in r["answer"]:
-                correct += 1
-    return correct / len(results) if results else 0
+def _ratio(results: list[dict], predicate) -> float:
+    return sum(1 for result in results if predicate(result)) / len(results) if results else 0.0
 
-def calculate_hallucination_flag(results):
-    # A hallucination occurs if it shouldn't abstain but didn't find info and made it up,
-    # or if it should abstain but gave a confident answer without abstain keywords.
-    hallucinated = 0
-    for r in results:
-        is_abstained = any(kw in r["answer"] for kw in ["未找到", "未检索到", "不足", "没有找到"])
-        if r["should_abstain"] and not is_abstained:
-            hallucinated += 1
-    return hallucinated / len(results) if results else 0
 
-def calculate_keyword_hit_rate(results):
-    hit_rates = []
-    for r in results:
-        keywords = r["gold_answer_keywords"]
-        if not keywords:
-            hit_rates.append(1.0)
-            continue
-        hits = sum(1 for kw in keywords if kw in r["answer"])
-        hit_rates.append(hits / len(keywords))
-    return sum(hit_rates) / len(hit_rates) if hit_rates else 0
+def _p95(values: list[float]) -> float:
+    if not values:
+        return 0.0
+    ordered = sorted(values)
+    return ordered[max(0, math.ceil(len(ordered) * 0.95) - 1)]
 
-def calculate_tool_usage_accuracy(results):
-    # simplified mapping
-    expected_tools_map = {
-        "mysql_query": ["mysql_query"],
-        "official_doc_rag": ["retrieve_official_docs"],
-        "student_review_rag": ["retrieve_student_reviews"],
-        "hybrid_sql_rag": ["mysql_query", "retrieve_student_reviews"]
-    }
-    
-    correct = 0
-    for r in results:
-        expected = expected_tools_map.get(r["expected_route"], [])
-        used = r.get("used_tools", [])
-        if set(expected) == set(used) or (not expected and not used):
-            correct += 1
-    return correct / len(results) if results else 0
 
-def calculate_all_metrics(results):
+def calculate_all_metrics(results: list[dict]) -> dict:
+    fact_results = [r for r in results if r["scenario"] == "structured_course_fact"]
+    risk_results = [r for r in results if r.get("expected_outcome") == "safe_refusal"]
+    recommendation_results = [r for r in results if r["scenario"] == "recommendation_hard_constraint"]
+    correct_facts = [r for r in fact_results if r.get("fact_correct")]
     return {
-        "route_accuracy": calculate_route_accuracy(results),
-        "source_type_accuracy": calculate_source_type_accuracy(results),
-        "abstain_accuracy": calculate_abstain_accuracy(results),
-        "citation_coverage": calculate_citation_coverage(results),
-        "hallucination_flag": calculate_hallucination_flag(results),
-        "keyword_hit_rate": calculate_keyword_hit_rate(results),
-        "tool_usage_accuracy": calculate_tool_usage_accuracy(results),
-        "faithfulness_score": None, # 预留 RAGAS
-        "context_precision_score": None # 预留 RAGAS
+        "qualified_evidence_fact_accuracy": _ratio(fact_results, lambda r: r.get("fact_correct") is True),
+        "risk_evidence_safe_refusal_rate": _ratio(risk_results, lambda r: r.get("safe_refusal") is True),
+        "recommendation_hard_constraint_satisfaction_rate": _ratio(
+            recommendation_results, lambda r: r.get("hard_constraints_satisfied") is True
+        ),
+        "official_evidence_coverage": _ratio(correct_facts, lambda r: r.get("evidence_valid") is True),
+        "execution_success_rate": _ratio(results, lambda r: not r.get("error")),
+        "latency_p95_ms": _p95([float(r.get("duration_ms", 0.0)) for r in results]),
+        "qualified_fact_case_count": len(fact_results),
+        "risk_refusal_case_count": len(risk_results),
+        "recommendation_case_count": len(recommendation_results),
     }
+
+
+M1_THRESHOLDS = {
+    "qualified_evidence_fact_accuracy": 0.95,
+    "risk_evidence_safe_refusal_rate": 1.00,
+    "recommendation_hard_constraint_satisfaction_rate": 1.00,
+    "official_evidence_coverage": 1.00,
+    "execution_success_rate": 1.00,
+}
+
+
+def acceptance_status(metrics: dict) -> dict[str, bool]:
+    return {name: metrics[name] >= threshold for name, threshold in M1_THRESHOLDS.items()}

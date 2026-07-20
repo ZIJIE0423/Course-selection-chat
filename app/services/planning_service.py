@@ -1,5 +1,6 @@
 import json
 import uuid
+from datetime import datetime, timezone
 
 from sqlalchemy.orm import Session
 
@@ -24,6 +25,127 @@ from app.schemas.planning import (
 
 class PlanningValidationError(ValueError):
     pass
+
+
+EVIDENCE_MAX_AGE_DAYS = 180
+
+
+def _as_utc(value: datetime) -> datetime:
+    return value if value.tzinfo else value.replace(tzinfo=timezone.utc)
+
+
+def _age_days(value: datetime) -> int:
+    return max(0, (datetime.now(timezone.utc) - _as_utc(value)).days)
+
+
+def _offering_evidence(snapshot: CourseOfferingSnapshot, offering: CourseOffering) -> dict:
+    """Build a machine-readable evidence record for a recommendation card.
+
+    M1 only permits recommendations based on the structured offering snapshot.
+    Missing timestamps are exposed as incomplete evidence instead of being
+    silently treated as current data.
+    """
+    reference_time = offering.source_updated_at or snapshot.generated_at
+    age_days = _age_days(reference_time)
+    completeness = "complete" if offering.source_updated_at else "partial"
+    freshness = "current" if age_days <= EVIDENCE_MAX_AGE_DAYS else "stale"
+    return {
+        "type": "course_offering_snapshot",
+        "source_tier": "official_structured_snapshot",
+        "snapshot_id": snapshot.external_snapshot_id,
+        "semester": snapshot.semester,
+        "generated_at": snapshot.generated_at.isoformat(),
+        "source_updated_at": (
+            offering.source_updated_at.isoformat() if offering.source_updated_at else None
+        ),
+        "field_completeness": completeness,
+        "freshness": freshness,
+        "age_days": age_days,
+        "conflict_status": "not_detected",
+    }
+
+
+def _required_offering_fields(constraints: list[RequirementItem]) -> set[str]:
+    """Return fields that must be present before a recommendation is safe.
+
+    Capacity and source time are baseline evidence: without them the service
+    cannot establish that a displayed section is currently selectable.  Other
+    fields become mandatory when the user made them a hard constraint.
+    """
+    required = {"course_code", "course_name", "remaining_capacity", "source_updated_at"}
+    for item in constraints:
+        if item.type in {"campus", "course_category", "teacher_name", "credits"}:
+            required.add(item.type)
+        elif item.type in {"weekday", "avoid_period"}:
+            required.add("schedule_json")
+    return required
+
+
+def _missing_evidence_fields(
+    offering: CourseOffering,
+    required_fields: set[str],
+) -> list[str]:
+    missing = []
+    for field in sorted(required_fields):
+        value = getattr(offering, field)
+        if value is None or (isinstance(value, str) and not value.strip()):
+            missing.append(field)
+    return missing
+
+
+def _validate_recommendation_evidence(
+    db: Session,
+    snapshot: CourseOfferingSnapshot,
+    offerings: list[CourseOffering],
+    constraints: list[RequirementItem],
+) -> None:
+    """Fail closed when active structured evidence cannot support planning.
+
+    This gate intentionally rejects the whole request rather than silently
+    dropping questionable rows.  A partial candidate set would make a hard
+    constraint look satisfied while hiding courses whose evidence is unsafe.
+    """
+    active_snapshot_count = (
+        db.query(CourseOfferingSnapshot)
+        .filter(
+            CourseOfferingSnapshot.tenant_id == snapshot.tenant_id,
+            CourseOfferingSnapshot.semester == snapshot.semester,
+            CourseOfferingSnapshot.status == "active",
+        )
+        .count()
+    )
+    if active_snapshot_count != 1:
+        raise PlanningValidationError("证据冲突：同一学期存在多个活动开课快照，已拒绝生成推荐")
+    if _age_days(snapshot.generated_at) > EVIDENCE_MAX_AGE_DAYS:
+        raise PlanningValidationError("证据已过期：活动开课快照超过 180 天，已拒绝生成推荐")
+
+    required_fields = _required_offering_fields(constraints)
+    seen_signatures: set[tuple[str, str, str, str]] = set()
+    for offering in offerings:
+        if offering.source_updated_at is None:
+            raise PlanningValidationError(
+                f"证据关键字段缺失：课程 {offering.course_code} 未提供 source_updated_at，已拒绝生成推荐"
+            )
+        if _age_days(offering.source_updated_at) > EVIDENCE_MAX_AGE_DAYS:
+            raise PlanningValidationError(
+                f"证据已过期：课程 {offering.course_code} 的来源更新时间超过 180 天，已拒绝生成推荐"
+            )
+        missing_fields = _missing_evidence_fields(offering, required_fields)
+        if missing_fields:
+            raise PlanningValidationError(
+                f"证据关键字段缺失：课程 {offering.course_code} 缺少 {', '.join(missing_fields)}，已拒绝生成推荐"
+            )
+        signature = (
+            offering.course_code,
+            offering.teacher_name or "",
+            offering.campus or "",
+            offering.schedule_json or "[]",
+        )
+        if signature in seen_signatures:
+            raise PlanningValidationError(
+                f"证据存在多条歧义记录：课程 {offering.course_code} 的班次信息无法唯一确定，已拒绝生成推荐"
+            )
+        seen_signatures.add(signature)
 
 
 def create_planning_session(
@@ -179,6 +301,7 @@ def recommend_courses(
     offerings = db.query(CourseOffering).filter(
         CourseOffering.snapshot_id == session.snapshot_id
     ).all()
+    _validate_recommendation_evidence(db, snapshot, offerings, payload.constraints)
     cards: list[RecommendationCard] = []
     for offering in offerings:
         if offering.course_code in completed_codes or offering.course_name.strip().lower() in completed_names:
@@ -221,8 +344,7 @@ def recommend_courses(
                 reasons.append(reason)
 
         card_warnings = []
-        if offering.source_updated_at is None:
-            card_warnings.append("开课数据未提供更新时间")
+        evidence = _offering_evidence(snapshot, offering)
         cards.append(
             RecommendationCard(
                 offering_id=offering.id,
@@ -236,14 +358,7 @@ def recommend_courses(
                 score=round(score, 2),
                 match_reasons=reasons,
                 warnings=card_warnings,
-                evidence=[
-                    {
-                        "type": "course_offering_snapshot",
-                        "snapshot_id": snapshot.external_snapshot_id,
-                        "semester": snapshot.semester,
-                        "generated_at": snapshot.generated_at.isoformat(),
-                    }
-                ],
+                evidence=[evidence],
             )
         )
 

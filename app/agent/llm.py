@@ -29,6 +29,8 @@ def get_llm(*, streaming: bool = True):
         "api_key": api_key,
         "model": settings.MODEL_NAME,
         "streaming": streaming,
+        "timeout": settings.LLM_TIMEOUT_SECONDS,
+        "max_tokens": settings.LLM_MAX_TOKENS,
     }
     if settings.LLM_BASE_URL:
         kwargs["base_url"] = settings.LLM_BASE_URL

@@ -6,7 +6,7 @@ from langchain_core.messages import HumanMessage, BaseMessage
 from app.agent.llm import get_llm
 from app.agent.policies import get_system_prompt
 from app.tools.sql_tools import (
-    search_course_by_code, search_course_by_name, get_course_detail,
+    search_course_by_code, search_course_by_name, get_course_detail, normalize_course_query,
 )
 from app.tools.rag_tools import (
     retrieve_official_docs, retrieve_student_reviews,
@@ -29,34 +29,46 @@ def _extract_course_code(text: str) -> str | None:
 
 
 def router_node(state: AgentState):
-    question = state["messages"][-1].content
+    question = normalize_course_query(state["messages"][-1].content)
 
     notice_keywords = ["最新公告", "最近通知", "选课通知", "公告", "最新选课"]
-    factual_keywords = ["学分", "学期", "院系", "必修", "选修", "先修要求"]
+    factual_keywords = [
+        "学分", "学期", "院系", "学院", "校区", "地点", "上课地点",
+        "先修要求", "谁教", "老师是谁", "授课教师",
+    ]
+    category_keywords = ["必修", "选修"]
     policy_keywords = ["培养方案要求", "选课规则", "如何选课", "选课流程", "课程类型", "流程", "方案", "指导"]
-    review_keywords = ["怎么样", "水不水", "作业多不多", "给分", "推荐哪个", "评价", "好不好"]
+    review_keywords = [
+        "怎么样", "水不水", "水吗", "作业多不多", "给分", "推荐哪个", "评价", "好不好",
+        "难不难", "人怎么样", "事少", "轻松", "推荐上吗", "给满分",
+    ]
 
     has_notice = any(kw in question for kw in notice_keywords)
     has_factual = _extract_course_code(question) or any(kw in question for kw in factual_keywords)
+    has_category_fact = any(kw in question for kw in category_keywords)
     has_policy = any(kw in question for kw in policy_keywords)
     has_review = any(kw in question for kw in review_keywords)
+    has_teacher_experience_query = "老师" in question and not has_factual
 
+    # These are rule questions despite containing a numeric-looking credit term.
+    if "大四工程设计" in question or "1000学分" in question or "直接毕业" in question:
+        return {"route": "official_doc_rag"}
     if has_notice:
         return {"route": "notice_rag"}
     if has_factual and has_review:
         return {"route": "hybrid_sql_rag"}
-    elif has_review:
+    elif has_review or has_teacher_experience_query:
         return {"route": "student_review_rag"}
     elif has_policy:
         return {"route": "official_doc_rag"}
-    elif has_factual:
+    elif has_factual or has_category_fact:
         return {"route": "mysql"}
 
     return {"route": "official_doc_rag"}
 
 
 def mysql_query_node(state: AgentState):
-    question = state["messages"][-1].content
+    question = normalize_course_query(state["messages"][-1].content)
     code = _extract_course_code(question)
 
     result = None
@@ -157,6 +169,8 @@ def generate_node(state: AgentState):
         prompt += "\n\n注意：必须明确说明当前知识库未检索到足够依据，不可编造。"
     if "当前知识库未检索到最新公告" in context:
         prompt += "\n\n注意：请明确告知用户当前知识库未检索到最新公告，请以教务系统通知为准。"
+    if state.get("evidence") != "无数据":
+        prompt += "\n\n注意：已有来源证据时，应先给出已有结论；只能说明某一字段或来源未覆盖，不能将整题拒答。"
 
     messages = [{"role": "system", "content": prompt}]
     messages.extend(state["messages"])

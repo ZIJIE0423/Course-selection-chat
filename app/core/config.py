@@ -18,6 +18,11 @@ class Settings:
     LLM_BASE_URL = os.getenv("LLM_BASE_URL", "")
     LLM_API_KEY_ENV = os.getenv("LLM_API_KEY_ENV", "")
     ENABLE_REASONING = _as_bool(os.getenv("ENABLE_REASONING"), False)
+    LLM_TIMEOUT_SECONDS = float(os.getenv("LLM_TIMEOUT_SECONDS", "45"))
+    LLM_MAX_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "512"))
+    # DashScope is the production default. ``local_hash`` supports fully local
+    # synthetic-data evaluation when an embedding-provider key is unavailable.
+    EMBEDDING_PROVIDER = os.getenv("EMBEDDING_PROVIDER", "dashscope")
     # 开箱即用的本地默认值；生产环境可通过同一变量切换到 MySQL。
     MYSQL_URL = os.getenv("MYSQL_URL", "sqlite:///./course_db.sqlite")
     CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH", "./chroma_data")
