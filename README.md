@@ -85,7 +85,7 @@ Course-selection-chat-main/
 .\start_demo.ps1
 ```
 
-脚本会同步锁定依赖、初始化独立的 `demo_course_db.sqlite`、导入演示培养方案和活动课程快照，并在 `8000` 端口同时启动 API 与 H5。随后访问 `http://127.0.0.1:8000/prototype/`。再次启动会幂等复用演示数据；若依赖已经同步，可用 `.\start_demo.ps1 -SkipSync` 加快启动。默认使用确定性 Demo 模式；本地 `.env` 配好模型后，可使用 `.\start_demo.ps1 -SkipSync -UseConfiguredModel` 显式启用模型调用。
+脚本会同步锁定依赖、初始化独立的 `demo_course_db.sqlite`、导入演示培养方案和活动课程快照，并在 `8000` 端口同时启动 API 与 H5。随后访问 `http://127.0.0.1:8000/prototype/`。再次启动会幂等复用演示数据；若依赖已经同步，可用 `.\start_demo.ps1 -SkipSync` 加快启动。脚本默认自动读取本地 `.env` 中已配置的模型；如需完全离线的结构化演示，可使用 `.\start_demo.ps1 -SkipSync -Deterministic`。
 
 演示课程和培养方案位于 `demo_data/`，均明确标记为样例数据。可在“历史课表”页面上传 `demo_data/history.csv`，完整体验上传确认、已修排除、自然语言筛选和真实课程详情。
 

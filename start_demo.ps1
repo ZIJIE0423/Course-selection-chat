@@ -1,6 +1,7 @@
 param(
     [switch]$SkipSync,
-    [switch]$UseConfiguredModel
+    [switch]$UseConfiguredModel,
+    [switch]$Deterministic
 )
 
 $projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -13,7 +14,9 @@ if (-not (Get-Command uv -ErrorAction SilentlyContinue)) {
 $databaseFile = Join-Path $projectRoot "demo_course_db.sqlite"
 $databaseUrlPath = $databaseFile.Replace('\', '/')
 $env:MYSQL_URL = "sqlite:///$databaseUrlPath"
-if (-not $UseConfiguredModel) {
+# app.core.config loads .env. Keep its configured model by default; only an
+# explicit deterministic run disables it.
+if ($Deterministic) {
     $env:LLM_PROVIDER = "none"
 }
 $env:FEATURE_COURSE_PLANNING = "true"
@@ -31,10 +34,10 @@ if ($LASTEXITCODE -ne 0) { throw "Demo data initialization failed" }
 
 Write-Host ""
 Write-Host "WeOUC Demo is starting..." -ForegroundColor Cyan
-if ($UseConfiguredModel) {
-    Write-Host "Configured model mode is enabled; ordinary chat requests may call the local .env provider." -ForegroundColor Yellow
+if ($Deterministic) {
+    Write-Host "Deterministic demo mode is enabled; ordinary chat requests do not call a model." -ForegroundColor DarkGray
 } else {
-    Write-Host "Deterministic demo mode is enabled; use -UseConfiguredModel to call the configured provider." -ForegroundColor DarkGray
+    Write-Host "Using local .env model settings when configured; otherwise ordinary Q&A needs a model." -ForegroundColor Yellow
 }
 Write-Host "Open: http://127.0.0.1:8000/prototype/" -ForegroundColor Green
 Write-Host "Press Ctrl+C to stop the service." -ForegroundColor DarkGray
